@@ -1,0 +1,6 @@
+framework module Pods_Droppyn_DroppynUITests {
+  umbrella header "Pods-Droppyn-DroppynUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

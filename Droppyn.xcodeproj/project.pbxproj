@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2638CBFFF06CA34E326CDE25 /* Pods_Droppyn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */; };
 		B7CCEF1C262A06E700E8E735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */; };
 		B7CCEF1E262A06E700E8E735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */; };
 		B7CCEF20262A06E700E8E735 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1F262A06E700E8E735 /* MainView.swift */; };
@@ -29,6 +30,8 @@
 		B7CCEF83262A083A00E8E735 /* ShoeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF82262A083A00E8E735 /* ShoeDetailView.swift */; };
 		B7CCEF94262A090300E8E735 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF93262A090300E8E735 /* PreviewData.swift */; };
 		B7CCEF9C262A09AD00E8E735 /* MyOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */; };
+		D9BB85E5C637993CF024B364 /* Pods_Droppyn_DroppynUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C99B35FE96163A4C51DC64 /* Pods_Droppyn_DroppynUITests.framework */; };
+		D9EF1ECCD933E46992F7921B /* Pods_DroppynTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F50601BDE41E642336A682D /* Pods_DroppynTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F50601BDE41E642336A682D /* Pods_DroppynTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroppynTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25C99B35FE96163A4C51DC64 /* Pods_Droppyn_DroppynUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droppyn_DroppynUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26AB3982727C02B93409E72D /* Pods-DroppynTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppynTests.debug.xcconfig"; path = "Target Support Files/Pods-DroppynTests/Pods-DroppynTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4690A62E6BAC0AD29D7EFAF6 /* Pods-Droppyn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.debug.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.debug.xcconfig"; sourceTree = "<group>"; };
+		64299345D14C7D2EDE47C97A /* Pods-Droppyn-DroppynUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn-DroppynUITests.release.xcconfig"; path = "Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests.release.xcconfig"; sourceTree = "<group>"; };
+		93F92D944EB0413F43179247 /* Pods-Droppyn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.release.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.release.xcconfig"; sourceTree = "<group>"; };
 		B7CCEF18262A06E700E8E735 /* Droppyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Droppyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +86,9 @@
 		B7CCEF82262A083A00E8E735 /* ShoeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailView.swift; sourceTree = "<group>"; };
 		B7CCEF93262A090300E8E735 /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOfferView.swift; sourceTree = "<group>"; };
+		C8C8300FE421155BEAD59A17 /* Pods-Droppyn-DroppynUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn-DroppynUITests.debug.xcconfig"; path = "Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFA64FAF58E356A943BA33DE /* Pods-DroppynTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppynTests.release.xcconfig"; path = "Target Support Files/Pods-DroppynTests/Pods-DroppynTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droppyn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2638CBFFF06CA34E326CDE25 /* Pods_Droppyn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EF1ECCD933E46992F7921B /* Pods_DroppynTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +112,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9BB85E5C637993CF024B364 /* Pods_Droppyn_DroppynUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27DE10BEAEBC30F082ADF048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */,
+				25C99B35FE96163A4C51DC64 /* Pods_Droppyn_DroppynUITests.framework */,
+				1F50601BDE41E642336A682D /* Pods_DroppynTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71F844D4583A05562D9B7EC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4690A62E6BAC0AD29D7EFAF6 /* Pods-Droppyn.debug.xcconfig */,
+				93F92D944EB0413F43179247 /* Pods-Droppyn.release.xcconfig */,
+				C8C8300FE421155BEAD59A17 /* Pods-Droppyn-DroppynUITests.debug.xcconfig */,
+				64299345D14C7D2EDE47C97A /* Pods-Droppyn-DroppynUITests.release.xcconfig */,
+				26AB3982727C02B93409E72D /* Pods-DroppynTests.debug.xcconfig */,
+				CFA64FAF58E356A943BA33DE /* Pods-DroppynTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B7CCEF0F262A06E700E8E735 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +150,8 @@
 				B7CCEF31262A06E800E8E735 /* DroppynTests */,
 				B7CCEF3C262A06E800E8E735 /* DroppynUITests */,
 				B7CCEF19262A06E700E8E735 /* Products */,
+				71F844D4583A05562D9B7EC4 /* Pods */,
+				27DE10BEAEBC30F082ADF048 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,9 +274,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7CCEF42262A06E800E8E735 /* Build configuration list for PBXNativeTarget "Droppyn" */;
 			buildPhases = (
+				EF9E4B2D98FB1D227908B32D /* [CP] Check Pods Manifest.lock */,
 				B7CCEF14262A06E700E8E735 /* Sources */,
 				B7CCEF15262A06E700E8E735 /* Frameworks */,
 				B7CCEF16262A06E700E8E735 /* Resources */,
+				A16918CC0F5FFB89226DE38F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7CCEF45262A06E800E8E735 /* Build configuration list for PBXNativeTarget "DroppynTests" */;
 			buildPhases = (
+				20E550349E735CDA1428A1E2 /* [CP] Check Pods Manifest.lock */,
 				B7CCEF2A262A06E800E8E735 /* Sources */,
 				B7CCEF2B262A06E800E8E735 /* Frameworks */,
 				B7CCEF2C262A06E800E8E735 /* Resources */,
@@ -268,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7CCEF48262A06E800E8E735 /* Build configuration list for PBXNativeTarget "DroppynUITests" */;
 			buildPhases = (
+				DD7DB9EF7889A2CA54701DA9 /* [CP] Check Pods Manifest.lock */,
 				B7CCEF35262A06E800E8E735 /* Sources */,
 				B7CCEF36262A06E800E8E735 /* Frameworks */,
 				B7CCEF37262A06E800E8E735 /* Resources */,
+				3303C6EA65238A758CBAFCF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,6 +396,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20E550349E735CDA1428A1E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DroppynTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3303C6EA65238A758CBAFCF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A16918CC0F5FFB89226DE38F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD7DB9EF7889A2CA54701DA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Droppyn-DroppynUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9E4B2D98FB1D227908B32D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Droppyn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7CCEF14262A06E700E8E735 /* Sources */ = {
@@ -537,6 +686,7 @@
 		};
 		B7CCEF43262A06E800E8E735 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4690A62E6BAC0AD29D7EFAF6 /* Pods-Droppyn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -558,6 +708,7 @@
 		};
 		B7CCEF44262A06E800E8E735 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F92D944EB0413F43179247 /* Pods-Droppyn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -579,6 +730,7 @@
 		};
 		B7CCEF46262A06E800E8E735 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26AB3982727C02B93409E72D /* Pods-DroppynTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -601,6 +753,7 @@
 		};
 		B7CCEF47262A06E800E8E735 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFA64FAF58E356A943BA33DE /* Pods-DroppynTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -623,6 +776,7 @@
 		};
 		B7CCEF49262A06E800E8E735 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C8300FE421155BEAD59A17 /* Pods-Droppyn-DroppynUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -643,6 +797,7 @@
 		};
 		B7CCEF4A262A06E800E8E735 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64299345D14C7D2EDE47C97A /* Pods-Droppyn-DroppynUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

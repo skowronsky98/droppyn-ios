@@ -52,7 +52,7 @@ class PreviewData {
         MyOffer(id: UUID(), shoe: Shoes[0], size: SizeCharts[1], price: 120, active: false),
         MyOffer(id: UUID(), shoe: Shoes[2], size: SizeCharts[1], price: 100),
         MyOffer(id: UUID(), shoe: Shoes[0], size: SizeCharts[3], price: 100),
-        MyOffer(id: UUID(), shoe: Shoes[3], size: SizeCharts[4], price: 500)
+        MyOffer(id: UUID(), shoe: Shoes[3], size: SizeCharts[4], price: 500, active: false)
     ]
 
 }
