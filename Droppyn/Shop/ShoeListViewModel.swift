@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ShoeSearchViewModel: ObservableObject {
+class ShoeListViewModel: ObservableObject {
     
     @Published var shoes : [Shoe]
     var brand: Brand?

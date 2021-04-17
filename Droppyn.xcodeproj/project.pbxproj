@@ -19,9 +19,9 @@
 		B7CCEF61262A07DD00E8E735 /* MyOfferItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF54262A07DD00E8E735 /* MyOfferItemView.swift */; };
 		B7CCEF62262A07DD00E8E735 /* MyOffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF55262A07DD00E8E735 /* MyOffersViewModel.swift */; };
 		B7CCEF63262A07DD00E8E735 /* MyOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF56262A07DD00E8E735 /* MyOffer.swift */; };
-		B7CCEF64262A07DD00E8E735 /* ShoeSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF58262A07DD00E8E735 /* ShoeSearchViewModel.swift */; };
+		B7CCEF64262A07DD00E8E735 /* ShoeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF58262A07DD00E8E735 /* ShoeListViewModel.swift */; };
 		B7CCEF65262A07DD00E8E735 /* ShoeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF59262A07DD00E8E735 /* ShoeItemView.swift */; };
-		B7CCEF66262A07DD00E8E735 /* ShoeSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF5A262A07DD00E8E735 /* ShoeSearchListView.swift */; };
+		B7CCEF66262A07DD00E8E735 /* ShoeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF5A262A07DD00E8E735 /* ShoeListView.swift */; };
 		B7CCEF67262A07DD00E8E735 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF5C262A07DD00E8E735 /* ProfileView.swift */; };
 		B7CCEF68262A07DD00E8E735 /* SizeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF5E262A07DD00E8E735 /* SizeChart.swift */; };
 		B7CCEF73262A07F400E8E735 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF6D262A07F400E8E735 /* Shoe.swift */; };
@@ -67,9 +67,9 @@
 		B7CCEF54262A07DD00E8E735 /* MyOfferItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOfferItemView.swift; sourceTree = "<group>"; };
 		B7CCEF55262A07DD00E8E735 /* MyOffersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersViewModel.swift; sourceTree = "<group>"; };
 		B7CCEF56262A07DD00E8E735 /* MyOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffer.swift; sourceTree = "<group>"; };
-		B7CCEF58262A07DD00E8E735 /* ShoeSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeSearchViewModel.swift; sourceTree = "<group>"; };
+		B7CCEF58262A07DD00E8E735 /* ShoeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeListViewModel.swift; sourceTree = "<group>"; };
 		B7CCEF59262A07DD00E8E735 /* ShoeItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeItemView.swift; sourceTree = "<group>"; };
-		B7CCEF5A262A07DD00E8E735 /* ShoeSearchListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeSearchListView.swift; sourceTree = "<group>"; };
+		B7CCEF5A262A07DD00E8E735 /* ShoeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeListView.swift; sourceTree = "<group>"; };
 		B7CCEF5C262A07DD00E8E735 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B7CCEF5E262A07DD00E8E735 /* SizeChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChart.swift; sourceTree = "<group>"; };
 		B7CCEF6D262A07F400E8E735 /* Shoe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				B7CCEFA0262A0A8200E8E735 /* Views */,
-				B7CCEF58262A07DD00E8E735 /* ShoeSearchViewModel.swift */,
+				B7CCEF58262A07DD00E8E735 /* ShoeListViewModel.swift */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -210,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				B7CCEF59262A07DD00E8E735 /* ShoeItemView.swift */,
-				B7CCEF5A262A07DD00E8E735 /* ShoeSearchListView.swift */,
+				B7CCEF5A262A07DD00E8E735 /* ShoeListView.swift */,
 				B7CCEF82262A083A00E8E735 /* ShoeDetailView.swift */,
 			);
 			path = Views;
@@ -357,7 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7CCEF76262A07F400E8E735 /* Brand.swift in Sources */,
-				B7CCEF66262A07DD00E8E735 /* ShoeSearchListView.swift in Sources */,
+				B7CCEF66262A07DD00E8E735 /* ShoeListView.swift in Sources */,
 				B7CCEF63262A07DD00E8E735 /* MyOffer.swift in Sources */,
 				B7CCEF73262A07F400E8E735 /* Shoe.swift in Sources */,
 				B7CCEF62262A07DD00E8E735 /* MyOffersViewModel.swift in Sources */,
@@ -372,7 +372,7 @@
 				B7CCEF68262A07DD00E8E735 /* SizeChart.swift in Sources */,
 				B7CCEF9C262A09AD00E8E735 /* MyOfferView.swift in Sources */,
 				B7CCEF65262A07DD00E8E735 /* ShoeItemView.swift in Sources */,
-				B7CCEF64262A07DD00E8E735 /* ShoeSearchViewModel.swift in Sources */,
+				B7CCEF64262A07DD00E8E735 /* ShoeListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

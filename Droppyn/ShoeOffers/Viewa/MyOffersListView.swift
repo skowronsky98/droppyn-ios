@@ -1,7 +1,5 @@
 import SwiftUI
 
-
-
 struct MyOffersListView: View {
     @ObservedObject private var myOffersVM = MyOffersViewModel()
     

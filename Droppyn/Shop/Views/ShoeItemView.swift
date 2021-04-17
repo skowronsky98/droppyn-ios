@@ -39,13 +39,6 @@ struct ShoeItemView: View {
                 }.padding()
                  
                 Spacer()
-            
-              
-                Text("9 US")
-                    .font(.headline)
-                    .bold()
-                    .padding(.trailing,24)
-                        
             }
             .padding(.horizontal,8)
 

@@ -17,14 +17,14 @@ struct MainView: View {
                    Text("Home")
                  }
             
-            ShoeSearchListView()
+            ShoeListView()
               .tabItem {
                  Image(systemName: "bag.fill")
                  Text("Shop")
               }
             
 
-              Text("The content of the third view")
+              ProfileView()
                 .tabItem {
                    Image(systemName: "person.fill")
                    Text("Profile")

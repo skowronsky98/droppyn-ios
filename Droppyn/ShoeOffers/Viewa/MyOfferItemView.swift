@@ -12,9 +12,9 @@ struct MyOfferItemView: View {
     
     var body: some View {
         ZStack{
-//            RoundedRectangle(cornerRadius: 25, style: .continuous)
-//                .foregroundColor(.white)
-//                .shadow(radius: 5)
+            RoundedRectangle(cornerRadius: 25, style: .continuous)
+                .foregroundColor(.white)
+                .shadow(radius: 5)
 //                .padding(.horizontal,8)
                 
             HStack{
@@ -50,7 +50,7 @@ struct MyOfferItemView: View {
                     if !offer.active {
                         
                         Spacer()
-                        Image(systemName: "xmark.rectangle.portrait")
+                        Image(systemName: "clear")
                             .font(.title)
                             .foregroundColor(.red)
                         Spacer()
@@ -67,14 +67,8 @@ struct MyOfferItemView: View {
                         
                     }
                 }
-                
-               
-            
-                
-                        
             }
             //.padding(.horizontal,8)
-
         }
         .fixedSize(horizontal: false, vertical: true)
 //        .padding(.vertical,4)
