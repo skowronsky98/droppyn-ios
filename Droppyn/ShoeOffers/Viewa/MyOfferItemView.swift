@@ -11,18 +11,19 @@ struct MyOfferItemView: View {
     var offer: MyOffer
     
     var body: some View {
-        ZStack{
-            RoundedRectangle(cornerRadius: 25, style: .continuous)
-                .foregroundColor(.white)
-                .shadow(radius: 5)
+//        ZStack{
+//            RoundedRectangle(cornerRadius: 25, style: .continuous)
+//                .foregroundColor(.white)
+//                .shadow(radius: 5)
 //                .padding(.horizontal,8)
                 
             HStack{
                 Image("\(offer.shoe.image)")
                     .resizable()
                     .scaledToFit()
-                    .padding(1)
+                    .padding(4)
                     .frame(width: 120, height: 120)
+                    
                     
                 
                 VStack(alignment: .leading) {
@@ -67,10 +68,10 @@ struct MyOfferItemView: View {
                         
                     }
                 }
-            }
+            }.fixedSize(horizontal: false, vertical: true)
             //.padding(.horizontal,8)
-        }
-        .fixedSize(horizontal: false, vertical: true)
+//        }
+//        .fixedSize(horizontal: false, vertical: true)
 //        .padding(.vertical,4)
     }
 }

@@ -11,17 +11,13 @@ struct ShoeItemView: View {
     var shoe : Shoe
     
     var body: some View {
-        ZStack{
-            RoundedRectangle(cornerRadius: 25, style: .continuous)
-                .foregroundColor(.white)
-                .shadow(radius: 5)
-                .padding(.horizontal,8)
+       
                 
             HStack{
                 Image("\(shoe.image)")
                     .resizable()
                     .scaledToFit()
-                    .padding()
+                    .padding(4)
                     .frame(width: 120, height: 120)
                     
                 
@@ -42,9 +38,9 @@ struct ShoeItemView: View {
             }
             .padding(.horizontal,8)
 
-        }
+        
         .fixedSize(horizontal: false, vertical: true)
-        .padding(.vertical,4)
+//        .padding(.vertical,4)
     }
 }
 

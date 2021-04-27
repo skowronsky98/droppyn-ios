@@ -9,6 +9,8 @@ import Foundation
 
 class PreviewData {
     
+    static var MyUser = User(username: "monster", email: "norbert.gierczak@gmail.com", firstname: "Norbert", surname: "Gierczak", phone: 909876345, photoURL: "profile", defultSize: SizeCharts[0])
+    
     static let Brands = [
         Brand(name: "Nike", image: "nike"),
         Brand(name: "Adidas", image: "adidas")
@@ -54,5 +56,5 @@ class PreviewData {
         MyOffer(id: UUID(), shoe: Shoes[0], size: SizeCharts[3], price: 100),
         MyOffer(id: UUID(), shoe: Shoes[3], size: SizeCharts[4], price: 500, active: false)
     ]
-
+    
 }

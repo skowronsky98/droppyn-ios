@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2638CBFFF06CA34E326CDE25 /* Pods_Droppyn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */; };
+		B7082B3726381F030018F593 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7082B3626381F030018F593 /* User.swift */; };
+		B7082B3C26381F930018F593 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7082B3B26381F930018F593 /* ProfileViewModel.swift */; };
 		B7CCEF1C262A06E700E8E735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */; };
 		B7CCEF1E262A06E700E8E735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */; };
 		B7CCEF20262A06E700E8E735 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1F262A06E700E8E735 /* MainView.swift */; };
@@ -58,6 +60,8 @@
 		4690A62E6BAC0AD29D7EFAF6 /* Pods-Droppyn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.debug.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.debug.xcconfig"; sourceTree = "<group>"; };
 		64299345D14C7D2EDE47C97A /* Pods-Droppyn-DroppynUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn-DroppynUITests.release.xcconfig"; path = "Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests.release.xcconfig"; sourceTree = "<group>"; };
 		93F92D944EB0413F43179247 /* Pods-Droppyn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.release.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.release.xcconfig"; sourceTree = "<group>"; };
+		B7082B3626381F030018F593 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B7082B3B26381F930018F593 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B7CCEF18262A06E700E8E735 /* Droppyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Droppyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,8 +143,15 @@
 				26AB3982727C02B93409E72D /* Pods-DroppynTests.debug.xcconfig */,
 				CFA64FAF58E356A943BA33DE /* Pods-DroppynTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B7082B2A26381ED20018F593 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7CCEF5C262A07DD00E8E735 /* ProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B7CCEF0F262A06E700E8E735 = {
@@ -231,7 +242,9 @@
 		B7CCEF5B262A07DD00E8E735 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B7CCEF5C262A07DD00E8E735 /* ProfileView.swift */,
+				B7082B2A26381ED20018F593 /* Views */,
+				B7082B3626381F030018F593 /* User.swift */,
+				B7082B3B26381F930018F593 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -260,8 +273,8 @@
 		B7CCEFA1262A0A9A00E8E735 /* Viewa */ = {
 			isa = PBXGroup;
 			children = (
-				B7CCEF53262A07DD00E8E735 /* MyOffersListView.swift */,
 				B7CCEF54262A07DD00E8E735 /* MyOfferItemView.swift */,
+				B7CCEF53262A07DD00E8E735 /* MyOffersListView.swift */,
 				B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */,
 			);
 			path = Viewa;
@@ -519,6 +532,8 @@
 				B7CCEF60262A07DD00E8E735 /* MyOffersListView.swift in Sources */,
 				B7CCEF83262A083A00E8E735 /* ShoeDetailView.swift in Sources */,
 				B7CCEF68262A07DD00E8E735 /* SizeChart.swift in Sources */,
+				B7082B3C26381F930018F593 /* ProfileViewModel.swift in Sources */,
+				B7082B3726381F030018F593 /* User.swift in Sources */,
 				B7CCEF9C262A09AD00E8E735 /* MyOfferView.swift in Sources */,
 				B7CCEF65262A07DD00E8E735 /* ShoeItemView.swift in Sources */,
 				B7CCEF64262A07DD00E8E735 /* ShoeListViewModel.swift in Sources */,
