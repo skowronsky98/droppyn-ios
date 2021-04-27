@@ -10,6 +10,10 @@
 		2638CBFFF06CA34E326CDE25 /* Pods_Droppyn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */; };
 		B7082B3726381F030018F593 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7082B3626381F030018F593 /* User.swift */; };
 		B7082B3C26381F930018F593 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7082B3B26381F930018F593 /* ProfileViewModel.swift */; };
+		B77103102638415000C6C77F /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B771030F2638415000C6C77F /* FavoriteView.swift */; };
+		B771031B26384B8D00C6C77F /* CreateOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B771031A26384B8D00C6C77F /* CreateOffer.swift */; };
+		B7710321263864F100C6C77F /* SizeChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7710320263864F100C6C77F /* SizeChartViewModel.swift */; };
+		B77103262638653700C6C77F /* SizeChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77103252638653700C6C77F /* SizeChartView.swift */; };
 		B7CCEF1C262A06E700E8E735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */; };
 		B7CCEF1E262A06E700E8E735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */; };
 		B7CCEF20262A06E700E8E735 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1F262A06E700E8E735 /* MainView.swift */; };
@@ -32,6 +36,7 @@
 		B7CCEF83262A083A00E8E735 /* ShoeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF82262A083A00E8E735 /* ShoeDetailView.swift */; };
 		B7CCEF94262A090300E8E735 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF93262A090300E8E735 /* PreviewData.swift */; };
 		B7CCEF9C262A09AD00E8E735 /* MyOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */; };
+		B7CDEFED26386C5A00CA5D3C /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CDEFEC26386C5A00CA5D3C /* Array+Identifiable.swift */; };
 		D9BB85E5C637993CF024B364 /* Pods_Droppyn_DroppynUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C99B35FE96163A4C51DC64 /* Pods_Droppyn_DroppynUITests.framework */; };
 		D9EF1ECCD933E46992F7921B /* Pods_DroppynTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F50601BDE41E642336A682D /* Pods_DroppynTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +67,10 @@
 		93F92D944EB0413F43179247 /* Pods-Droppyn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.release.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.release.xcconfig"; sourceTree = "<group>"; };
 		B7082B3626381F030018F593 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7082B3B26381F930018F593 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		B771030F2638415000C6C77F /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		B771031A26384B8D00C6C77F /* CreateOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOffer.swift; sourceTree = "<group>"; };
+		B7710320263864F100C6C77F /* SizeChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChartViewModel.swift; sourceTree = "<group>"; };
+		B77103252638653700C6C77F /* SizeChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChartView.swift; sourceTree = "<group>"; };
 		B7CCEF18262A06E700E8E735 /* Droppyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Droppyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +99,7 @@
 		B7CCEF82262A083A00E8E735 /* ShoeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailView.swift; sourceTree = "<group>"; };
 		B7CCEF93262A090300E8E735 /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOfferView.swift; sourceTree = "<group>"; };
+		B7CDEFEC26386C5A00CA5D3C /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		C8C8300FE421155BEAD59A17 /* Pods-Droppyn-DroppynUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn-DroppynUITests.debug.xcconfig"; path = "Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CFA64FAF58E356A943BA33DE /* Pods-DroppynTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppynTests.release.xcconfig"; path = "Target Support Files/Pods-DroppynTests/Pods-DroppynTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droppyn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +164,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B771030E2638412900C6C77F /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B771030F2638415000C6C77F /* FavoriteView.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B771031F263864E300C6C77F /* SizeChart */ = {
+			isa = PBXGroup;
+			children = (
+				B77103252638653700C6C77F /* SizeChartView.swift */,
+				B7710320263864F100C6C77F /* SizeChartViewModel.swift */,
+			);
+			path = SizeChart;
+			sourceTree = "<group>";
+		};
 		B7CCEF0F262A06E700E8E735 = {
 			isa = PBXGroup;
 			children = (
@@ -179,13 +206,16 @@
 		B7CCEF1A262A06E700E8E735 /* Droppyn */ = {
 			isa = PBXGroup;
 			children = (
+				B771031F263864E300C6C77F /* SizeChart */,
+				B771030E2638412900C6C77F /* Favorite */,
 				B7CCEF5B262A07DD00E8E735 /* Profile */,
-				B7CCEF51262A07DD00E8E735 /* ShoeOffers */,
+				B7CCEF51262A07DD00E8E735 /* Offers */,
 				B7CCEF57262A07DD00E8E735 /* Shop */,
 				B7CCEF6C262A07F400E8E735 /* Models */,
 				B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */,
 				B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */,
 				B7CCEF1F262A06E700E8E735 /* MainView.swift */,
+				B7CDEFEB26386C5A00CA5D3C /* Utills */,
 				B7CCEF21262A06E700E8E735 /* Assets.xcassets */,
 				B7CCEF26262A06E700E8E735 /* LaunchScreen.storyboard */,
 				B7CCEF29262A06E700E8E735 /* Info.plist */,
@@ -221,13 +251,13 @@
 			path = DroppynUITests;
 			sourceTree = "<group>";
 		};
-		B7CCEF51262A07DD00E8E735 /* ShoeOffers */ = {
+		B7CCEF51262A07DD00E8E735 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
 				B7CCEFA1262A0A9A00E8E735 /* Viewa */,
 				B7CCEF55262A07DD00E8E735 /* MyOffersViewModel.swift */,
 			);
-			path = ShoeOffers;
+			path = Offers;
 			sourceTree = "<group>";
 		};
 		B7CCEF57262A07DD00E8E735 /* Shop */ = {
@@ -243,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				B7082B2A26381ED20018F593 /* Views */,
-				B7082B3626381F030018F593 /* User.swift */,
 				B7082B3B26381F930018F593 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
@@ -256,6 +285,7 @@
 				B7CCEF6D262A07F400E8E735 /* Shoe.swift */,
 				B7CCEF70262A07F400E8E735 /* Brand.swift */,
 				B7CCEF56262A07DD00E8E735 /* MyOffer.swift */,
+				B7082B3626381F030018F593 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -276,8 +306,17 @@
 				B7CCEF54262A07DD00E8E735 /* MyOfferItemView.swift */,
 				B7CCEF53262A07DD00E8E735 /* MyOffersListView.swift */,
 				B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */,
+				B771031A26384B8D00C6C77F /* CreateOffer.swift */,
 			);
 			path = Viewa;
+			sourceTree = "<group>";
+		};
+		B7CDEFEB26386C5A00CA5D3C /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				B7CDEFEC26386C5A00CA5D3C /* Array+Identifiable.swift */,
+			);
+			path = Utills;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,14 +562,19 @@
 				B7CCEF63262A07DD00E8E735 /* MyOffer.swift in Sources */,
 				B7CCEF73262A07F400E8E735 /* Shoe.swift in Sources */,
 				B7CCEF62262A07DD00E8E735 /* MyOffersViewModel.swift in Sources */,
+				B7CDEFED26386C5A00CA5D3C /* Array+Identifiable.swift in Sources */,
+				B771031B26384B8D00C6C77F /* CreateOffer.swift in Sources */,
 				B7CCEF67262A07DD00E8E735 /* ProfileView.swift in Sources */,
 				B7CCEF1C262A06E700E8E735 /* AppDelegate.swift in Sources */,
 				B7CCEF61262A07DD00E8E735 /* MyOfferItemView.swift in Sources */,
+				B77103102638415000C6C77F /* FavoriteView.swift in Sources */,
 				B7CCEF94262A090300E8E735 /* PreviewData.swift in Sources */,
 				B7CCEF1E262A06E700E8E735 /* SceneDelegate.swift in Sources */,
 				B7CCEF20262A06E700E8E735 /* MainView.swift in Sources */,
+				B7710321263864F100C6C77F /* SizeChartViewModel.swift in Sources */,
 				B7CCEF60262A07DD00E8E735 /* MyOffersListView.swift in Sources */,
 				B7CCEF83262A083A00E8E735 /* ShoeDetailView.swift in Sources */,
+				B77103262638653700C6C77F /* SizeChartView.swift in Sources */,
 				B7CCEF68262A07DD00E8E735 /* SizeChart.swift in Sources */,
 				B7082B3C26381F930018F593 /* ProfileViewModel.swift in Sources */,
 				B7082B3726381F030018F593 /* User.swift in Sources */,

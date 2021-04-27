@@ -1,18 +1,11 @@
-//
-//  ProfileView.swift
-//  FitRite
-//
-//  Created by Oskar Skowronski on 10/03/2021.
-//
-
 import SwiftUI
 
 struct ProfileView: View {
     @ObservedObject private var profileVM = ProfileViewModel()
     
-    @State var rValue: Double
-       @State var gValue: Double
-       @State var bValue: Double
+    @State var rValue: Double = 0.5
+       @State var gValue: Double = 0.5
+       @State var bValue: Double = 0.5
 
        @State var isPresented = false
        var SliderModalPresentation: some View {
@@ -56,13 +49,22 @@ struct ProfileView: View {
                    ProfileImage()
                        .offset(y: -120)
                        .padding(.bottom, -130)
+                    
                    VStack {
-                    Text("\(profileVM.user.username)")
+                    Text("\(profileVM.user.firstname) \(profileVM.user.surname)")
                            .bold()
                            .font(.title)
-                       Text("Software and Web Developer")
+                       Text("\(profileVM.user.email)")
                            .font(.subheadline)
                            .foregroundColor(.gray)
+                    
+                    HStack {
+                        Image(systemName: "phone.fill")
+                        Text("\(profileVM.user.phone)")
+                               .bold()
+                            .font(.headline)
+                            
+                    }.padding(.top,6)
                    }.padding()
                }
                Spacer()
@@ -86,9 +88,12 @@ struct ProfileView: View {
         var body: some View {
             VStack {
                 Image("profile")
+                    .resizable()
+                    .frame(width: 270, height: 270)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
                     .shadow(radius: 10)
+                    
             }
         }
     }
@@ -121,7 +126,7 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(rValue: 0.5, gValue: 0.5, bValue: 0.5)
+        ProfileView()
     }
 }
 

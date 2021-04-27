@@ -23,8 +23,13 @@ struct MainView: View {
                  Text("Shop")
               }
             
+            FavoriteView()
+                .tabItem {
+                   Image(systemName: "heart.fill")
+                   Text("Favorite")
+                 }
 
-            ProfileView(rValue: 0.5, gValue: 0.5, bValue: 0.5)
+            ProfileView()
                 .tabItem {
                    Image(systemName: "person.fill")
                    Text("Profile")

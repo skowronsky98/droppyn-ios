@@ -8,7 +8,7 @@ struct MyOffersListView: View {
             List{
                 ForEach(myOffersVM.myOffers){ offer in
                     
-                    NavigationLink(destination: MyOfferView()){
+                    NavigationLink(destination: MyOfferView(myOffer: self.$myOffersVM.myOffers[self.myOffersVM.myOffers.firstIndex(matching: offer)!])){
                         MyOfferItemView(offer: offer)
                     }
                     

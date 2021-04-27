@@ -8,7 +8,7 @@
 import Foundation
 
 struct User {
-    internal init(id: UUID = UUID(), username: String, email: String, firstname: String, surname: String, phone: Int, photoURL: String, defultSize: SizeChart) {
+    internal init(id: UUID = UUID(), username: String, email: String, firstname: String, surname: String, phone: String, photoURL: String, defultSize: SizeChart) {
         self.id = id
         self.username = username
         self.email = email
@@ -24,7 +24,7 @@ struct User {
     let email: String
     let firstname: String
     let surname: String
-    let phone: Int
+    let phone: String
     let photoURL: String
     let defultSize: SizeChart
     

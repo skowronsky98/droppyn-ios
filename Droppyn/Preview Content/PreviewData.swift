@@ -9,7 +9,7 @@ import Foundation
 
 class PreviewData {
     
-    static var MyUser = User(username: "monster", email: "norbert.gierczak@gmail.com", firstname: "Norbert", surname: "Gierczak", phone: 909876345, photoURL: "profile", defultSize: SizeCharts[0])
+    static var MyUser = User(username: "gierczak", email: "norbert.gierczak@gmail.com", firstname: "Adam", surname: "Małysz", phone: "909876345", photoURL: "profile", defultSize: SizeCharts[0])
     
     static let Brands = [
         Brand(name: "Nike", image: "nike"),
