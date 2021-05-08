@@ -46,9 +46,10 @@ struct ProfileView: View {
                        .foregroundColor(Color(red: rValue, green: gValue, blue: bValue, opacity: 1.0))
                        .edgesIgnoringSafeArea(.top)
                        .frame(height: 250)
-                   ProfileImage()
-                       .offset(y: -120)
-                       .padding(.bottom, -130)
+                ProfileImage("\(profileVM.user.photoURL)")
+                       
+                        .offset(y: -120)
+                        .padding(.bottom, -130)
                     
                    VStack {
                     Text("\(profileVM.user.firstname) \(profileVM.user.surname)")
@@ -85,9 +86,15 @@ struct ProfileView: View {
     
     
     struct ProfileImage: View {
+        var url: String
+        
+        init(_ url: String) {
+            self.url = url
+        }
+        
         var body: some View {
             VStack {
-                Image("profile")
+                Image("\(url)")
                     .resizable()
                     .frame(width: 270, height: 270)
                     .clipShape(Circle())
@@ -98,26 +105,28 @@ struct ProfileView: View {
         }
     }
 
-    struct Header: View {
-        var body: some View {
-            Rectangle()
-                .frame(width: 500)
-        }
+
+}
+
+struct Header: View {
+    var body: some View {
+        Rectangle()
+            .frame(width: 500)
     }
+}
+
+struct colorSlider: View {
+    @Binding var value: Double
+    var textColor: Color
     
-    struct colorSlider: View {
-        @Binding var value: Double
-        var textColor: Color
-        
-        var body: some View {
-            HStack {
-                Text(verbatim: "0")
-                    .foregroundColor(textColor)
-                Slider(value: $value, in: 0.0...1.0)
-                Text(verbatim: "255")
-                    .foregroundColor(textColor)
-                
-            }
+    var body: some View {
+        HStack {
+            Text(verbatim: "0")
+                .foregroundColor(textColor)
+            Slider(value: $value, in: 0.0...1.0)
+            Text(verbatim: "255")
+                .foregroundColor(textColor)
+            
         }
     }
 }

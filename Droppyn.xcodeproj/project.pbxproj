@@ -7,330 +7,369 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2638CBFFF06CA34E326CDE25 /* Pods_Droppyn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */; };
-		B7082B3726381F030018F593 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7082B3626381F030018F593 /* User.swift */; };
-		B7082B3C26381F930018F593 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7082B3B26381F930018F593 /* ProfileViewModel.swift */; };
-		B77103102638415000C6C77F /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B771030F2638415000C6C77F /* FavoriteView.swift */; };
-		B771031B26384B8D00C6C77F /* CreateOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B771031A26384B8D00C6C77F /* CreateOffer.swift */; };
-		B7710321263864F100C6C77F /* SizeChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7710320263864F100C6C77F /* SizeChartViewModel.swift */; };
-		B77103262638653700C6C77F /* SizeChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77103252638653700C6C77F /* SizeChartView.swift */; };
-		B7CCEF1C262A06E700E8E735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */; };
-		B7CCEF1E262A06E700E8E735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */; };
-		B7CCEF20262A06E700E8E735 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF1F262A06E700E8E735 /* MainView.swift */; };
-		B7CCEF22262A06E700E8E735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CCEF21262A06E700E8E735 /* Assets.xcassets */; };
-		B7CCEF25262A06E700E8E735 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7CCEF24262A06E700E8E735 /* Preview Assets.xcassets */; };
-		B7CCEF28262A06E700E8E735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7CCEF26262A06E700E8E735 /* LaunchScreen.storyboard */; };
-		B7CCEF33262A06E800E8E735 /* DroppynTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF32262A06E800E8E735 /* DroppynTests.swift */; };
-		B7CCEF3E262A06E800E8E735 /* DroppynUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF3D262A06E800E8E735 /* DroppynUITests.swift */; };
-		B7CCEF60262A07DD00E8E735 /* MyOffersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF53262A07DD00E8E735 /* MyOffersListView.swift */; };
-		B7CCEF61262A07DD00E8E735 /* MyOfferItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF54262A07DD00E8E735 /* MyOfferItemView.swift */; };
-		B7CCEF62262A07DD00E8E735 /* MyOffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF55262A07DD00E8E735 /* MyOffersViewModel.swift */; };
-		B7CCEF63262A07DD00E8E735 /* MyOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF56262A07DD00E8E735 /* MyOffer.swift */; };
-		B7CCEF64262A07DD00E8E735 /* ShoeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF58262A07DD00E8E735 /* ShoeListViewModel.swift */; };
-		B7CCEF65262A07DD00E8E735 /* ShoeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF59262A07DD00E8E735 /* ShoeItemView.swift */; };
-		B7CCEF66262A07DD00E8E735 /* ShoeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF5A262A07DD00E8E735 /* ShoeListView.swift */; };
-		B7CCEF67262A07DD00E8E735 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF5C262A07DD00E8E735 /* ProfileView.swift */; };
-		B7CCEF68262A07DD00E8E735 /* SizeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF5E262A07DD00E8E735 /* SizeChart.swift */; };
-		B7CCEF73262A07F400E8E735 /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF6D262A07F400E8E735 /* Shoe.swift */; };
-		B7CCEF76262A07F400E8E735 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF70262A07F400E8E735 /* Brand.swift */; };
-		B7CCEF83262A083A00E8E735 /* ShoeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF82262A083A00E8E735 /* ShoeDetailView.swift */; };
-		B7CCEF94262A090300E8E735 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF93262A090300E8E735 /* PreviewData.swift */; };
-		B7CCEF9C262A09AD00E8E735 /* MyOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */; };
-		B7CDEFED26386C5A00CA5D3C /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7CDEFEC26386C5A00CA5D3C /* Array+Identifiable.swift */; };
-		D9BB85E5C637993CF024B364 /* Pods_Droppyn_DroppynUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C99B35FE96163A4C51DC64 /* Pods_Droppyn_DroppynUITests.framework */; };
-		D9EF1ECCD933E46992F7921B /* Pods_DroppynTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F50601BDE41E642336A682D /* Pods_DroppynTests.framework */; };
+		1FFDE34F875CF8A501D7FD56 /* Pods_Droppyn_DroppynUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E294E7E31F9F0134F9E6CAB /* Pods_Droppyn_DroppynUITests.framework */; };
+		A036AE290F44BD09BDE68CD0 /* Pods_DroppynTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2280C7BD3B0D8B11D86791 /* Pods_DroppynTests.framework */; };
+		B71067382646B5F000CB65EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71067372646B5F000CB65EF /* GoogleService-Info.plist */; };
+		B7330F8B2642F4E10014EA1C /* ShoeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F692642F4E10014EA1C /* ShoeListViewModel.swift */; };
+		B7330F8C2642F4E10014EA1C /* ShoeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F6B2642F4E10014EA1C /* ShoeListView.swift */; };
+		B7330F8D2642F4E10014EA1C /* ShoeItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F6C2642F4E10014EA1C /* ShoeItemView.swift */; };
+		B7330F8E2642F4E10014EA1C /* ShoeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F6D2642F4E10014EA1C /* ShoeDetailView.swift */; };
+		B7330F8F2642F4E10014EA1C /* SizeChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F6F2642F4E10014EA1C /* SizeChartView.swift */; };
+		B7330F902642F4E10014EA1C /* SizeChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F702642F4E10014EA1C /* SizeChartViewModel.swift */; };
+		B7330F912642F4E10014EA1C /* Shoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F722642F4E10014EA1C /* Shoe.swift */; };
+		B7330F942642F4E10014EA1C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F752642F4E10014EA1C /* User.swift */; };
+		B7330F962642F4E10014EA1C /* SizeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F772642F4E10014EA1C /* SizeChart.swift */; };
+		B7330F982642F4E10014EA1C /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F792642F4E10014EA1C /* Brand.swift */; };
+		B7330F992642F4E10014EA1C /* Offer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F7A2642F4E10014EA1C /* Offer.swift */; };
+		B7330F9D2642F4E10014EA1C /* MyOffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F7F2642F4E10014EA1C /* MyOffersViewModel.swift */; };
+		B7330F9E2642F4E10014EA1C /* CreateOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F812642F4E10014EA1C /* CreateOffer.swift */; };
+		B7330F9F2642F4E10014EA1C /* MyOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F822642F4E10014EA1C /* MyOfferView.swift */; };
+		B7330FA02642F4E10014EA1C /* MyOfferItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F832642F4E10014EA1C /* MyOfferItemView.swift */; };
+		B7330FA12642F4E10014EA1C /* MyOffersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F842642F4E10014EA1C /* MyOffersListView.swift */; };
+		B7330FA22642F4E10014EA1C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F872642F4E10014EA1C /* ProfileView.swift */; };
+		B7330FA32642F4E10014EA1C /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F882642F4E10014EA1C /* ProfileViewModel.swift */; };
+		B7330FA42642F4E10014EA1C /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F8A2642F4E10014EA1C /* FavoriteView.swift */; };
+		B7330FAA2642F50F0014EA1C /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330FA92642F50F0014EA1C /* Array+Identifiable.swift */; };
+		B7330FAF2642F5190014EA1C /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330FAE2642F5190014EA1C /* PreviewData.swift */; };
+		B7A864FA2642FAA3009E2191 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A864F92642FAA3009E2191 /* ChatView.swift */; };
+		B7DAA32E2646E682007026B7 /* OffersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA32D2646E682007026B7 /* OffersListView.swift */; };
+		B7DAA3372646E69E007026B7 /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA3362646E69E007026B7 /* OfferView.swift */; };
+		B7DAA34D2646EEA2007026B7 /* OffersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA34C2646EEA2007026B7 /* OffersViewModel.swift */; };
+		B7DAA3602646FBE3007026B7 /* OfferItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA35F2646FBE3007026B7 /* OfferItemView.swift */; };
+		B7DAA3652646FCAB007026B7 /* OfferDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA3642646FCAB007026B7 /* OfferDetailView.swift */; };
+		B7F2E81B2642F34E00A43811 /* DroppynApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2E81A2642F34E00A43811 /* DroppynApp.swift */; };
+		B7F2E81D2642F34E00A43811 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2E81C2642F34E00A43811 /* ContentView.swift */; };
+		B7F2E81F2642F34F00A43811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F2E81E2642F34F00A43811 /* Assets.xcassets */; };
+		B7F2E8222642F34F00A43811 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7F2E8212642F34F00A43811 /* Preview Assets.xcassets */; };
+		B7F2E82D2642F34F00A43811 /* DroppynTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2E82C2642F34F00A43811 /* DroppynTests.swift */; };
+		B7F2E8382642F34F00A43811 /* DroppynUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F2E8372642F34F00A43811 /* DroppynUITests.swift */; };
+		BBCF42C8C61C59AB159D0541 /* Pods_Droppyn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3963700B0A1898848BF60C88 /* Pods_Droppyn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B7CCEF2F262A06E800E8E735 /* PBXContainerItemProxy */ = {
+		B7F2E8292642F34F00A43811 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B7CCEF10262A06E700E8E735 /* Project object */;
+			containerPortal = B7F2E80F2642F34E00A43811 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B7CCEF17262A06E700E8E735;
+			remoteGlobalIDString = B7F2E8162642F34E00A43811;
 			remoteInfo = Droppyn;
 		};
-		B7CCEF3A262A06E800E8E735 /* PBXContainerItemProxy */ = {
+		B7F2E8342642F34F00A43811 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B7CCEF10262A06E700E8E735 /* Project object */;
+			containerPortal = B7F2E80F2642F34E00A43811 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B7CCEF17262A06E700E8E735;
+			remoteGlobalIDString = B7F2E8162642F34E00A43811;
 			remoteInfo = Droppyn;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1F50601BDE41E642336A682D /* Pods_DroppynTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroppynTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25C99B35FE96163A4C51DC64 /* Pods_Droppyn_DroppynUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droppyn_DroppynUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26AB3982727C02B93409E72D /* Pods-DroppynTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppynTests.debug.xcconfig"; path = "Target Support Files/Pods-DroppynTests/Pods-DroppynTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4690A62E6BAC0AD29D7EFAF6 /* Pods-Droppyn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.debug.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.debug.xcconfig"; sourceTree = "<group>"; };
-		64299345D14C7D2EDE47C97A /* Pods-Droppyn-DroppynUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn-DroppynUITests.release.xcconfig"; path = "Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests.release.xcconfig"; sourceTree = "<group>"; };
-		93F92D944EB0413F43179247 /* Pods-Droppyn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.release.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.release.xcconfig"; sourceTree = "<group>"; };
-		B7082B3626381F030018F593 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B7082B3B26381F930018F593 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		B771030F2638415000C6C77F /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
-		B771031A26384B8D00C6C77F /* CreateOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOffer.swift; sourceTree = "<group>"; };
-		B7710320263864F100C6C77F /* SizeChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChartViewModel.swift; sourceTree = "<group>"; };
-		B77103252638653700C6C77F /* SizeChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChartView.swift; sourceTree = "<group>"; };
-		B7CCEF18262A06E700E8E735 /* Droppyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Droppyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B7CCEF1F262A06E700E8E735 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		B7CCEF21262A06E700E8E735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B7CCEF24262A06E700E8E735 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B7CCEF27262A06E700E8E735 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B7CCEF29262A06E700E8E735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7CCEF2E262A06E800E8E735 /* DroppynTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroppynTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7CCEF32262A06E800E8E735 /* DroppynTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppynTests.swift; sourceTree = "<group>"; };
-		B7CCEF34262A06E800E8E735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7CCEF39262A06E800E8E735 /* DroppynUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroppynUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7CCEF3D262A06E800E8E735 /* DroppynUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppynUITests.swift; sourceTree = "<group>"; };
-		B7CCEF3F262A06E800E8E735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7CCEF53262A07DD00E8E735 /* MyOffersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersListView.swift; sourceTree = "<group>"; };
-		B7CCEF54262A07DD00E8E735 /* MyOfferItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOfferItemView.swift; sourceTree = "<group>"; };
-		B7CCEF55262A07DD00E8E735 /* MyOffersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersViewModel.swift; sourceTree = "<group>"; };
-		B7CCEF56262A07DD00E8E735 /* MyOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffer.swift; sourceTree = "<group>"; };
-		B7CCEF58262A07DD00E8E735 /* ShoeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeListViewModel.swift; sourceTree = "<group>"; };
-		B7CCEF59262A07DD00E8E735 /* ShoeItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeItemView.swift; sourceTree = "<group>"; };
-		B7CCEF5A262A07DD00E8E735 /* ShoeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeListView.swift; sourceTree = "<group>"; };
-		B7CCEF5C262A07DD00E8E735 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		B7CCEF5E262A07DD00E8E735 /* SizeChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChart.swift; sourceTree = "<group>"; };
-		B7CCEF6D262A07F400E8E735 /* Shoe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
-		B7CCEF70262A07F400E8E735 /* Brand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
-		B7CCEF82262A083A00E8E735 /* ShoeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailView.swift; sourceTree = "<group>"; };
-		B7CCEF93262A090300E8E735 /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
-		B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOfferView.swift; sourceTree = "<group>"; };
-		B7CDEFEC26386C5A00CA5D3C /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
-		C8C8300FE421155BEAD59A17 /* Pods-Droppyn-DroppynUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn-DroppynUITests.debug.xcconfig"; path = "Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CFA64FAF58E356A943BA33DE /* Pods-DroppynTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppynTests.release.xcconfig"; path = "Target Support Files/Pods-DroppynTests/Pods-DroppynTests.release.xcconfig"; sourceTree = "<group>"; };
-		FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droppyn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD2B07A346B1129ED259EC2 /* Pods-Droppyn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.release.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.release.xcconfig"; sourceTree = "<group>"; };
+		0E294E7E31F9F0134F9E6CAB /* Pods_Droppyn_DroppynUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droppyn_DroppynUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3963700B0A1898848BF60C88 /* Pods_Droppyn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Droppyn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ECCF2364F2D79B1E8257F05 /* Pods-Droppyn-DroppynUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn-DroppynUITests.release.xcconfig"; path = "Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A2280C7BD3B0D8B11D86791 /* Pods_DroppynTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DroppynTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F6763FDFE71317C833B702 /* Pods-DroppynTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppynTests.debug.xcconfig"; path = "Target Support Files/Pods-DroppynTests/Pods-DroppynTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B71067372646B5F000CB65EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B7330F692642F4E10014EA1C /* ShoeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeListViewModel.swift; sourceTree = "<group>"; };
+		B7330F6B2642F4E10014EA1C /* ShoeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeListView.swift; sourceTree = "<group>"; };
+		B7330F6C2642F4E10014EA1C /* ShoeItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeItemView.swift; sourceTree = "<group>"; };
+		B7330F6D2642F4E10014EA1C /* ShoeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeDetailView.swift; sourceTree = "<group>"; };
+		B7330F6F2642F4E10014EA1C /* SizeChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChartView.swift; sourceTree = "<group>"; };
+		B7330F702642F4E10014EA1C /* SizeChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChartViewModel.swift; sourceTree = "<group>"; };
+		B7330F722642F4E10014EA1C /* Shoe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shoe.swift; sourceTree = "<group>"; };
+		B7330F752642F4E10014EA1C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B7330F772642F4E10014EA1C /* SizeChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChart.swift; sourceTree = "<group>"; };
+		B7330F792642F4E10014EA1C /* Brand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		B7330F7A2642F4E10014EA1C /* Offer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Offer.swift; sourceTree = "<group>"; };
+		B7330F7F2642F4E10014EA1C /* MyOffersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersViewModel.swift; sourceTree = "<group>"; };
+		B7330F812642F4E10014EA1C /* CreateOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOffer.swift; sourceTree = "<group>"; };
+		B7330F822642F4E10014EA1C /* MyOfferView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOfferView.swift; sourceTree = "<group>"; };
+		B7330F832642F4E10014EA1C /* MyOfferItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOfferItemView.swift; sourceTree = "<group>"; };
+		B7330F842642F4E10014EA1C /* MyOffersListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersListView.swift; sourceTree = "<group>"; };
+		B7330F872642F4E10014EA1C /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B7330F882642F4E10014EA1C /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		B7330F8A2642F4E10014EA1C /* FavoriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		B7330FA92642F50F0014EA1C /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		B7330FAE2642F5190014EA1C /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		B7A864F92642FAA3009E2191 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		B7DAA32D2646E682007026B7 /* OffersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersListView.swift; sourceTree = "<group>"; };
+		B7DAA3362646E69E007026B7 /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
+		B7DAA34C2646EEA2007026B7 /* OffersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersViewModel.swift; sourceTree = "<group>"; };
+		B7DAA35F2646FBE3007026B7 /* OfferItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferItemView.swift; sourceTree = "<group>"; };
+		B7DAA3642646FCAB007026B7 /* OfferDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailView.swift; sourceTree = "<group>"; };
+		B7F2E8172642F34E00A43811 /* Droppyn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Droppyn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2E81A2642F34E00A43811 /* DroppynApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppynApp.swift; sourceTree = "<group>"; };
+		B7F2E81C2642F34E00A43811 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7F2E81E2642F34F00A43811 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7F2E8212642F34F00A43811 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7F2E8232642F34F00A43811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F2E8282642F34F00A43811 /* DroppynTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroppynTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2E82C2642F34F00A43811 /* DroppynTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppynTests.swift; sourceTree = "<group>"; };
+		B7F2E82E2642F34F00A43811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7F2E8332642F34F00A43811 /* DroppynUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroppynUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7F2E8372642F34F00A43811 /* DroppynUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppynUITests.swift; sourceTree = "<group>"; };
+		B7F2E8392642F34F00A43811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1080233515FF75389EB9612 /* Pods-Droppyn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn.debug.xcconfig"; path = "Target Support Files/Pods-Droppyn/Pods-Droppyn.debug.xcconfig"; sourceTree = "<group>"; };
+		F4512A51BB091EE5A907D5EC /* Pods-Droppyn-DroppynUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Droppyn-DroppynUITests.debug.xcconfig"; path = "Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C05F2ED20758FB2248C881 /* Pods-DroppynTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppynTests.release.xcconfig"; path = "Target Support Files/Pods-DroppynTests/Pods-DroppynTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B7CCEF15262A06E700E8E735 /* Frameworks */ = {
+		B7F2E8142642F34E00A43811 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2638CBFFF06CA34E326CDE25 /* Pods_Droppyn.framework in Frameworks */,
+				BBCF42C8C61C59AB159D0541 /* Pods_Droppyn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7CCEF2B262A06E800E8E735 /* Frameworks */ = {
+		B7F2E8252642F34F00A43811 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9EF1ECCD933E46992F7921B /* Pods_DroppynTests.framework in Frameworks */,
+				A036AE290F44BD09BDE68CD0 /* Pods_DroppynTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7CCEF36262A06E800E8E735 /* Frameworks */ = {
+		B7F2E8302642F34F00A43811 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9BB85E5C637993CF024B364 /* Pods_Droppyn_DroppynUITests.framework in Frameworks */,
+				1FFDE34F875CF8A501D7FD56 /* Pods_Droppyn_DroppynUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27DE10BEAEBC30F082ADF048 /* Frameworks */ = {
+		5F3FDE9F1703A67F5FA1C801 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FD9AABECFCCC8735012E3B4C /* Pods_Droppyn.framework */,
-				25C99B35FE96163A4C51DC64 /* Pods_Droppyn_DroppynUITests.framework */,
-				1F50601BDE41E642336A682D /* Pods_DroppynTests.framework */,
+				3963700B0A1898848BF60C88 /* Pods_Droppyn.framework */,
+				0E294E7E31F9F0134F9E6CAB /* Pods_Droppyn_DroppynUITests.framework */,
+				6A2280C7BD3B0D8B11D86791 /* Pods_DroppynTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		71F844D4583A05562D9B7EC4 /* Pods */ = {
+		654490385C930D21388AAF5F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4690A62E6BAC0AD29D7EFAF6 /* Pods-Droppyn.debug.xcconfig */,
-				93F92D944EB0413F43179247 /* Pods-Droppyn.release.xcconfig */,
-				C8C8300FE421155BEAD59A17 /* Pods-Droppyn-DroppynUITests.debug.xcconfig */,
-				64299345D14C7D2EDE47C97A /* Pods-Droppyn-DroppynUITests.release.xcconfig */,
-				26AB3982727C02B93409E72D /* Pods-DroppynTests.debug.xcconfig */,
-				CFA64FAF58E356A943BA33DE /* Pods-DroppynTests.release.xcconfig */,
+				F1080233515FF75389EB9612 /* Pods-Droppyn.debug.xcconfig */,
+				0AD2B07A346B1129ED259EC2 /* Pods-Droppyn.release.xcconfig */,
+				F4512A51BB091EE5A907D5EC /* Pods-Droppyn-DroppynUITests.debug.xcconfig */,
+				3ECCF2364F2D79B1E8257F05 /* Pods-Droppyn-DroppynUITests.release.xcconfig */,
+				80F6763FDFE71317C833B702 /* Pods-DroppynTests.debug.xcconfig */,
+				F6C05F2ED20758FB2248C881 /* Pods-DroppynTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B7082B2A26381ED20018F593 /* Views */ = {
+		B7330F682642F4E10014EA1C /* Shop */ = {
 			isa = PBXGroup;
 			children = (
-				B7CCEF5C262A07DD00E8E735 /* ProfileView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B771030E2638412900C6C77F /* Favorite */ = {
-			isa = PBXGroup;
-			children = (
-				B771030F2638415000C6C77F /* FavoriteView.swift */,
-			);
-			path = Favorite;
-			sourceTree = "<group>";
-		};
-		B771031F263864E300C6C77F /* SizeChart */ = {
-			isa = PBXGroup;
-			children = (
-				B77103252638653700C6C77F /* SizeChartView.swift */,
-				B7710320263864F100C6C77F /* SizeChartViewModel.swift */,
-			);
-			path = SizeChart;
-			sourceTree = "<group>";
-		};
-		B7CCEF0F262A06E700E8E735 = {
-			isa = PBXGroup;
-			children = (
-				B7CCEF1A262A06E700E8E735 /* Droppyn */,
-				B7CCEF31262A06E800E8E735 /* DroppynTests */,
-				B7CCEF3C262A06E800E8E735 /* DroppynUITests */,
-				B7CCEF19262A06E700E8E735 /* Products */,
-				71F844D4583A05562D9B7EC4 /* Pods */,
-				27DE10BEAEBC30F082ADF048 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		B7CCEF19262A06E700E8E735 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B7CCEF18262A06E700E8E735 /* Droppyn.app */,
-				B7CCEF2E262A06E800E8E735 /* DroppynTests.xctest */,
-				B7CCEF39262A06E800E8E735 /* DroppynUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B7CCEF1A262A06E700E8E735 /* Droppyn */ = {
-			isa = PBXGroup;
-			children = (
-				B771031F263864E300C6C77F /* SizeChart */,
-				B771030E2638412900C6C77F /* Favorite */,
-				B7CCEF5B262A07DD00E8E735 /* Profile */,
-				B7CCEF51262A07DD00E8E735 /* Offers */,
-				B7CCEF57262A07DD00E8E735 /* Shop */,
-				B7CCEF6C262A07F400E8E735 /* Models */,
-				B7CCEF1B262A06E700E8E735 /* AppDelegate.swift */,
-				B7CCEF1D262A06E700E8E735 /* SceneDelegate.swift */,
-				B7CCEF1F262A06E700E8E735 /* MainView.swift */,
-				B7CDEFEB26386C5A00CA5D3C /* Utills */,
-				B7CCEF21262A06E700E8E735 /* Assets.xcassets */,
-				B7CCEF26262A06E700E8E735 /* LaunchScreen.storyboard */,
-				B7CCEF29262A06E700E8E735 /* Info.plist */,
-				B7CCEF23262A06E700E8E735 /* Preview Content */,
-			);
-			path = Droppyn;
-			sourceTree = "<group>";
-		};
-		B7CCEF23262A06E700E8E735 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B7CCEF93262A090300E8E735 /* PreviewData.swift */,
-				B7CCEF24262A06E700E8E735 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B7CCEF31262A06E800E8E735 /* DroppynTests */ = {
-			isa = PBXGroup;
-			children = (
-				B7CCEF32262A06E800E8E735 /* DroppynTests.swift */,
-				B7CCEF34262A06E800E8E735 /* Info.plist */,
-			);
-			path = DroppynTests;
-			sourceTree = "<group>";
-		};
-		B7CCEF3C262A06E800E8E735 /* DroppynUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B7CCEF3D262A06E800E8E735 /* DroppynUITests.swift */,
-				B7CCEF3F262A06E800E8E735 /* Info.plist */,
-			);
-			path = DroppynUITests;
-			sourceTree = "<group>";
-		};
-		B7CCEF51262A07DD00E8E735 /* Offers */ = {
-			isa = PBXGroup;
-			children = (
-				B7CCEFA1262A0A9A00E8E735 /* Viewa */,
-				B7CCEF55262A07DD00E8E735 /* MyOffersViewModel.swift */,
-			);
-			path = Offers;
-			sourceTree = "<group>";
-		};
-		B7CCEF57262A07DD00E8E735 /* Shop */ = {
-			isa = PBXGroup;
-			children = (
-				B7CCEFA0262A0A8200E8E735 /* Views */,
-				B7CCEF58262A07DD00E8E735 /* ShoeListViewModel.swift */,
+				B7330F692642F4E10014EA1C /* ShoeListViewModel.swift */,
+				B7330F6A2642F4E10014EA1C /* Views */,
+				B7DAA32C2646E5BD007026B7 /* Offers */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
 		};
-		B7CCEF5B262A07DD00E8E735 /* Profile */ = {
+		B7330F6A2642F4E10014EA1C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B7082B2A26381ED20018F593 /* Views */,
-				B7082B3B26381F930018F593 /* ProfileViewModel.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		B7CCEF6C262A07F400E8E735 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B7CCEF5E262A07DD00E8E735 /* SizeChart.swift */,
-				B7CCEF6D262A07F400E8E735 /* Shoe.swift */,
-				B7CCEF70262A07F400E8E735 /* Brand.swift */,
-				B7CCEF56262A07DD00E8E735 /* MyOffer.swift */,
-				B7082B3626381F030018F593 /* User.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B7CCEFA0262A0A8200E8E735 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B7CCEF59262A07DD00E8E735 /* ShoeItemView.swift */,
-				B7CCEF5A262A07DD00E8E735 /* ShoeListView.swift */,
-				B7CCEF82262A083A00E8E735 /* ShoeDetailView.swift */,
+				B7330F6B2642F4E10014EA1C /* ShoeListView.swift */,
+				B7330F6C2642F4E10014EA1C /* ShoeItemView.swift */,
+				B7330F6D2642F4E10014EA1C /* ShoeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B7CCEFA1262A0A9A00E8E735 /* Viewa */ = {
+		B7330F6E2642F4E10014EA1C /* SizeChart */ = {
 			isa = PBXGroup;
 			children = (
-				B7CCEF54262A07DD00E8E735 /* MyOfferItemView.swift */,
-				B7CCEF53262A07DD00E8E735 /* MyOffersListView.swift */,
-				B7CCEF9B262A09AD00E8E735 /* MyOfferView.swift */,
-				B771031A26384B8D00C6C77F /* CreateOffer.swift */,
+				B7330FA82642F50F0014EA1C /* Utills */,
+				B7330F6F2642F4E10014EA1C /* SizeChartView.swift */,
+				B7330F702642F4E10014EA1C /* SizeChartViewModel.swift */,
+			);
+			path = SizeChart;
+			sourceTree = "<group>";
+		};
+		B7330F712642F4E10014EA1C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7330F722642F4E10014EA1C /* Shoe.swift */,
+				B7330F752642F4E10014EA1C /* User.swift */,
+				B7330F772642F4E10014EA1C /* SizeChart.swift */,
+				B7330F792642F4E10014EA1C /* Brand.swift */,
+				B7330F7A2642F4E10014EA1C /* Offer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B7330F7D2642F4E10014EA1C /* MyOffers */ = {
+			isa = PBXGroup;
+			children = (
+				B7330F7F2642F4E10014EA1C /* MyOffersViewModel.swift */,
+				B7330F802642F4E10014EA1C /* Viewa */,
+			);
+			path = MyOffers;
+			sourceTree = "<group>";
+		};
+		B7330F802642F4E10014EA1C /* Viewa */ = {
+			isa = PBXGroup;
+			children = (
+				B7330F812642F4E10014EA1C /* CreateOffer.swift */,
+				B7330F822642F4E10014EA1C /* MyOfferView.swift */,
+				B7330F832642F4E10014EA1C /* MyOfferItemView.swift */,
+				B7330F842642F4E10014EA1C /* MyOffersListView.swift */,
 			);
 			path = Viewa;
 			sourceTree = "<group>";
 		};
-		B7CDEFEB26386C5A00CA5D3C /* Utills */ = {
+		B7330F852642F4E10014EA1C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B7CDEFEC26386C5A00CA5D3C /* Array+Identifiable.swift */,
+				B7330F862642F4E10014EA1C /* Views */,
+				B7330F882642F4E10014EA1C /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B7330F862642F4E10014EA1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7330F872642F4E10014EA1C /* ProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7330F892642F4E10014EA1C /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				B7330F8A2642F4E10014EA1C /* FavoriteView.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		B7330FA82642F50F0014EA1C /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				B7330FA92642F50F0014EA1C /* Array+Identifiable.swift */,
 			);
 			path = Utills;
+			sourceTree = "<group>";
+		};
+		B7A864F02642FA71009E2191 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B7A864F92642FAA3009E2191 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B7DAA32C2646E5BD007026B7 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA3352646E691007026B7 /* View */,
+				B7DAA34C2646EEA2007026B7 /* OffersViewModel.swift */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		B7DAA3352646E691007026B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7DAA32D2646E682007026B7 /* OffersListView.swift */,
+				B7DAA3362646E69E007026B7 /* OfferView.swift */,
+				B7DAA35F2646FBE3007026B7 /* OfferItemView.swift */,
+				B7DAA3642646FCAB007026B7 /* OfferDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7F2E80E2642F34E00A43811 = {
+			isa = PBXGroup;
+			children = (
+				B7F2E8192642F34E00A43811 /* Droppyn */,
+				B7F2E82B2642F34F00A43811 /* DroppynTests */,
+				B7F2E8362642F34F00A43811 /* DroppynUITests */,
+				B7F2E8182642F34E00A43811 /* Products */,
+				654490385C930D21388AAF5F /* Pods */,
+				5F3FDE9F1703A67F5FA1C801 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7F2E8182642F34E00A43811 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2E8172642F34E00A43811 /* Droppyn.app */,
+				B7F2E8282642F34F00A43811 /* DroppynTests.xctest */,
+				B7F2E8332642F34F00A43811 /* DroppynUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7F2E8192642F34E00A43811 /* Droppyn */ = {
+			isa = PBXGroup;
+			children = (
+				B7A864F02642FA71009E2191 /* Chat */,
+				B7330F892642F4E10014EA1C /* Favorite */,
+				B7330F712642F4E10014EA1C /* Models */,
+				B7330F7D2642F4E10014EA1C /* MyOffers */,
+				B7330F852642F4E10014EA1C /* Profile */,
+				B7330F682642F4E10014EA1C /* Shop */,
+				B7330F6E2642F4E10014EA1C /* SizeChart */,
+				B7F2E81A2642F34E00A43811 /* DroppynApp.swift */,
+				B7F2E81C2642F34E00A43811 /* ContentView.swift */,
+				B7F2E81E2642F34F00A43811 /* Assets.xcassets */,
+				B7F2E8232642F34F00A43811 /* Info.plist */,
+				B71067372646B5F000CB65EF /* GoogleService-Info.plist */,
+				B7F2E8202642F34F00A43811 /* Preview Content */,
+			);
+			path = Droppyn;
+			sourceTree = "<group>";
+		};
+		B7F2E8202642F34F00A43811 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B7330FAE2642F5190014EA1C /* PreviewData.swift */,
+				B7F2E8212642F34F00A43811 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7F2E82B2642F34F00A43811 /* DroppynTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2E82C2642F34F00A43811 /* DroppynTests.swift */,
+				B7F2E82E2642F34F00A43811 /* Info.plist */,
+			);
+			path = DroppynTests;
+			sourceTree = "<group>";
+		};
+		B7F2E8362642F34F00A43811 /* DroppynUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7F2E8372642F34F00A43811 /* DroppynUITests.swift */,
+				B7F2E8392642F34F00A43811 /* Info.plist */,
+			);
+			path = DroppynUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B7CCEF17262A06E700E8E735 /* Droppyn */ = {
+		B7F2E8162642F34E00A43811 /* Droppyn */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7CCEF42262A06E800E8E735 /* Build configuration list for PBXNativeTarget "Droppyn" */;
+			buildConfigurationList = B7F2E83C2642F34F00A43811 /* Build configuration list for PBXNativeTarget "Droppyn" */;
 			buildPhases = (
-				EF9E4B2D98FB1D227908B32D /* [CP] Check Pods Manifest.lock */,
-				B7CCEF14262A06E700E8E735 /* Sources */,
-				B7CCEF15262A06E700E8E735 /* Frameworks */,
-				B7CCEF16262A06E700E8E735 /* Resources */,
-				A16918CC0F5FFB89226DE38F /* [CP] Embed Pods Frameworks */,
+				30AB0204CD0A7B42DEB769ED /* [CP] Check Pods Manifest.lock */,
+				B7F2E8132642F34E00A43811 /* Sources */,
+				B7F2E8142642F34E00A43811 /* Frameworks */,
+				B7F2E8152642F34E00A43811 /* Resources */,
+				C71ACD6D734233681D179C9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,71 +377,71 @@
 			);
 			name = Droppyn;
 			productName = Droppyn;
-			productReference = B7CCEF18262A06E700E8E735 /* Droppyn.app */;
+			productReference = B7F2E8172642F34E00A43811 /* Droppyn.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B7CCEF2D262A06E800E8E735 /* DroppynTests */ = {
+		B7F2E8272642F34F00A43811 /* DroppynTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7CCEF45262A06E800E8E735 /* Build configuration list for PBXNativeTarget "DroppynTests" */;
+			buildConfigurationList = B7F2E83F2642F34F00A43811 /* Build configuration list for PBXNativeTarget "DroppynTests" */;
 			buildPhases = (
-				20E550349E735CDA1428A1E2 /* [CP] Check Pods Manifest.lock */,
-				B7CCEF2A262A06E800E8E735 /* Sources */,
-				B7CCEF2B262A06E800E8E735 /* Frameworks */,
-				B7CCEF2C262A06E800E8E735 /* Resources */,
+				4AB2BB8D668D0F636E062374 /* [CP] Check Pods Manifest.lock */,
+				B7F2E8242642F34F00A43811 /* Sources */,
+				B7F2E8252642F34F00A43811 /* Frameworks */,
+				B7F2E8262642F34F00A43811 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B7CCEF30262A06E800E8E735 /* PBXTargetDependency */,
+				B7F2E82A2642F34F00A43811 /* PBXTargetDependency */,
 			);
 			name = DroppynTests;
 			productName = DroppynTests;
-			productReference = B7CCEF2E262A06E800E8E735 /* DroppynTests.xctest */;
+			productReference = B7F2E8282642F34F00A43811 /* DroppynTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B7CCEF38262A06E800E8E735 /* DroppynUITests */ = {
+		B7F2E8322642F34F00A43811 /* DroppynUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7CCEF48262A06E800E8E735 /* Build configuration list for PBXNativeTarget "DroppynUITests" */;
+			buildConfigurationList = B7F2E8422642F34F00A43811 /* Build configuration list for PBXNativeTarget "DroppynUITests" */;
 			buildPhases = (
-				DD7DB9EF7889A2CA54701DA9 /* [CP] Check Pods Manifest.lock */,
-				B7CCEF35262A06E800E8E735 /* Sources */,
-				B7CCEF36262A06E800E8E735 /* Frameworks */,
-				B7CCEF37262A06E800E8E735 /* Resources */,
-				3303C6EA65238A758CBAFCF3 /* [CP] Embed Pods Frameworks */,
+				86D77D290F14D205CE0748A1 /* [CP] Check Pods Manifest.lock */,
+				B7F2E82F2642F34F00A43811 /* Sources */,
+				B7F2E8302642F34F00A43811 /* Frameworks */,
+				B7F2E8312642F34F00A43811 /* Resources */,
+				6284A47948ABEEA0BD94B6F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B7CCEF3B262A06E800E8E735 /* PBXTargetDependency */,
+				B7F2E8352642F34F00A43811 /* PBXTargetDependency */,
 			);
 			name = DroppynUITests;
 			productName = DroppynUITests;
-			productReference = B7CCEF39262A06E800E8E735 /* DroppynUITests.xctest */;
+			productReference = B7F2E8332642F34F00A43811 /* DroppynUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B7CCEF10262A06E700E8E735 /* Project object */ = {
+		B7F2E80F2642F34E00A43811 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					B7CCEF17262A06E700E8E735 = {
+					B7F2E8162642F34E00A43811 = {
 						CreatedOnToolsVersion = 12.1;
 					};
-					B7CCEF2D262A06E800E8E735 = {
+					B7F2E8272642F34F00A43811 = {
 						CreatedOnToolsVersion = 12.1;
-						TestTargetID = B7CCEF17262A06E700E8E735;
+						TestTargetID = B7F2E8162642F34E00A43811;
 					};
-					B7CCEF38262A06E800E8E735 = {
+					B7F2E8322642F34F00A43811 = {
 						CreatedOnToolsVersion = 12.1;
-						TestTargetID = B7CCEF17262A06E700E8E735;
+						TestTargetID = B7F2E8162642F34E00A43811;
 					};
 				};
 			};
-			buildConfigurationList = B7CCEF13262A06E700E8E735 /* Build configuration list for PBXProject "Droppyn" */;
+			buildConfigurationList = B7F2E8122642F34E00A43811 /* Build configuration list for PBXProject "Droppyn" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -410,37 +449,37 @@
 				en,
 				Base,
 			);
-			mainGroup = B7CCEF0F262A06E700E8E735;
-			productRefGroup = B7CCEF19262A06E700E8E735 /* Products */;
+			mainGroup = B7F2E80E2642F34E00A43811;
+			productRefGroup = B7F2E8182642F34E00A43811 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7CCEF17262A06E700E8E735 /* Droppyn */,
-				B7CCEF2D262A06E800E8E735 /* DroppynTests */,
-				B7CCEF38262A06E800E8E735 /* DroppynUITests */,
+				B7F2E8162642F34E00A43811 /* Droppyn */,
+				B7F2E8272642F34F00A43811 /* DroppynTests */,
+				B7F2E8322642F34F00A43811 /* DroppynUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B7CCEF16262A06E700E8E735 /* Resources */ = {
+		B7F2E8152642F34E00A43811 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CCEF28262A06E700E8E735 /* LaunchScreen.storyboard in Resources */,
-				B7CCEF25262A06E700E8E735 /* Preview Assets.xcassets in Resources */,
-				B7CCEF22262A06E700E8E735 /* Assets.xcassets in Resources */,
+				B7F2E8222642F34F00A43811 /* Preview Assets.xcassets in Resources */,
+				B7F2E81F2642F34F00A43811 /* Assets.xcassets in Resources */,
+				B71067382646B5F000CB65EF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7CCEF2C262A06E800E8E735 /* Resources */ = {
+		B7F2E8262642F34F00A43811 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7CCEF37262A06E800E8E735 /* Resources */ = {
+		B7F2E8312642F34F00A43811 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,85 +489,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20E550349E735CDA1428A1E2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DroppynTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3303C6EA65238A758CBAFCF3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A16918CC0F5FFB89226DE38F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD7DB9EF7889A2CA54701DA9 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Droppyn-DroppynUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EF9E4B2D98FB1D227908B32D /* [CP] Check Pods Manifest.lock */ = {
+		30AB0204CD0A7B42DEB769ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -550,84 +511,156 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4AB2BB8D668D0F636E062374 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DroppynTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6284A47948ABEEA0BD94B6F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Droppyn-DroppynUITests/Pods-Droppyn-DroppynUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D77D290F14D205CE0748A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Droppyn-DroppynUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C71ACD6D734233681D179C9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Droppyn/Pods-Droppyn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B7CCEF14262A06E700E8E735 /* Sources */ = {
+		B7F2E8132642F34E00A43811 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CCEF76262A07F400E8E735 /* Brand.swift in Sources */,
-				B7CCEF66262A07DD00E8E735 /* ShoeListView.swift in Sources */,
-				B7CCEF63262A07DD00E8E735 /* MyOffer.swift in Sources */,
-				B7CCEF73262A07F400E8E735 /* Shoe.swift in Sources */,
-				B7CCEF62262A07DD00E8E735 /* MyOffersViewModel.swift in Sources */,
-				B7CDEFED26386C5A00CA5D3C /* Array+Identifiable.swift in Sources */,
-				B771031B26384B8D00C6C77F /* CreateOffer.swift in Sources */,
-				B7CCEF67262A07DD00E8E735 /* ProfileView.swift in Sources */,
-				B7CCEF1C262A06E700E8E735 /* AppDelegate.swift in Sources */,
-				B7CCEF61262A07DD00E8E735 /* MyOfferItemView.swift in Sources */,
-				B77103102638415000C6C77F /* FavoriteView.swift in Sources */,
-				B7CCEF94262A090300E8E735 /* PreviewData.swift in Sources */,
-				B7CCEF1E262A06E700E8E735 /* SceneDelegate.swift in Sources */,
-				B7CCEF20262A06E700E8E735 /* MainView.swift in Sources */,
-				B7710321263864F100C6C77F /* SizeChartViewModel.swift in Sources */,
-				B7CCEF60262A07DD00E8E735 /* MyOffersListView.swift in Sources */,
-				B7CCEF83262A083A00E8E735 /* ShoeDetailView.swift in Sources */,
-				B77103262638653700C6C77F /* SizeChartView.swift in Sources */,
-				B7CCEF68262A07DD00E8E735 /* SizeChart.swift in Sources */,
-				B7082B3C26381F930018F593 /* ProfileViewModel.swift in Sources */,
-				B7082B3726381F030018F593 /* User.swift in Sources */,
-				B7CCEF9C262A09AD00E8E735 /* MyOfferView.swift in Sources */,
-				B7CCEF65262A07DD00E8E735 /* ShoeItemView.swift in Sources */,
-				B7CCEF64262A07DD00E8E735 /* ShoeListViewModel.swift in Sources */,
+				B7330F8E2642F4E10014EA1C /* ShoeDetailView.swift in Sources */,
+				B7DAA34D2646EEA2007026B7 /* OffersViewModel.swift in Sources */,
+				B7DAA3372646E69E007026B7 /* OfferView.swift in Sources */,
+				B7330FA02642F4E10014EA1C /* MyOfferItemView.swift in Sources */,
+				B7330FA32642F4E10014EA1C /* ProfileViewModel.swift in Sources */,
+				B7F2E81D2642F34E00A43811 /* ContentView.swift in Sources */,
+				B7330F8B2642F4E10014EA1C /* ShoeListViewModel.swift in Sources */,
+				B7330F9F2642F4E10014EA1C /* MyOfferView.swift in Sources */,
+				B7330F9E2642F4E10014EA1C /* CreateOffer.swift in Sources */,
+				B7330FA12642F4E10014EA1C /* MyOffersListView.swift in Sources */,
+				B7F2E81B2642F34E00A43811 /* DroppynApp.swift in Sources */,
+				B7330F902642F4E10014EA1C /* SizeChartViewModel.swift in Sources */,
+				B7330F9D2642F4E10014EA1C /* MyOffersViewModel.swift in Sources */,
+				B7330FA22642F4E10014EA1C /* ProfileView.swift in Sources */,
+				B7330FAA2642F50F0014EA1C /* Array+Identifiable.swift in Sources */,
+				B7330FA42642F4E10014EA1C /* FavoriteView.swift in Sources */,
+				B7330F8F2642F4E10014EA1C /* SizeChartView.swift in Sources */,
+				B7330FAF2642F5190014EA1C /* PreviewData.swift in Sources */,
+				B7DAA3652646FCAB007026B7 /* OfferDetailView.swift in Sources */,
+				B7A864FA2642FAA3009E2191 /* ChatView.swift in Sources */,
+				B7330F912642F4E10014EA1C /* Shoe.swift in Sources */,
+				B7330F962642F4E10014EA1C /* SizeChart.swift in Sources */,
+				B7330F992642F4E10014EA1C /* Offer.swift in Sources */,
+				B7DAA3602646FBE3007026B7 /* OfferItemView.swift in Sources */,
+				B7330F942642F4E10014EA1C /* User.swift in Sources */,
+				B7330F8D2642F4E10014EA1C /* ShoeItemView.swift in Sources */,
+				B7DAA32E2646E682007026B7 /* OffersListView.swift in Sources */,
+				B7330F982642F4E10014EA1C /* Brand.swift in Sources */,
+				B7330F8C2642F4E10014EA1C /* ShoeListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7CCEF2A262A06E800E8E735 /* Sources */ = {
+		B7F2E8242642F34F00A43811 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CCEF33262A06E800E8E735 /* DroppynTests.swift in Sources */,
+				B7F2E82D2642F34F00A43811 /* DroppynTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7CCEF35262A06E800E8E735 /* Sources */ = {
+		B7F2E82F2642F34F00A43811 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7CCEF3E262A06E800E8E735 /* DroppynUITests.swift in Sources */,
+				B7F2E8382642F34F00A43811 /* DroppynUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B7CCEF30262A06E800E8E735 /* PBXTargetDependency */ = {
+		B7F2E82A2642F34F00A43811 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B7CCEF17262A06E700E8E735 /* Droppyn */;
-			targetProxy = B7CCEF2F262A06E800E8E735 /* PBXContainerItemProxy */;
+			target = B7F2E8162642F34E00A43811 /* Droppyn */;
+			targetProxy = B7F2E8292642F34F00A43811 /* PBXContainerItemProxy */;
 		};
-		B7CCEF3B262A06E800E8E735 /* PBXTargetDependency */ = {
+		B7F2E8352642F34F00A43811 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B7CCEF17262A06E700E8E735 /* Droppyn */;
-			targetProxy = B7CCEF3A262A06E800E8E735 /* PBXContainerItemProxy */;
+			target = B7F2E8162642F34E00A43811 /* Droppyn */;
+			targetProxy = B7F2E8342642F34F00A43811 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		B7CCEF26262A06E700E8E735 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B7CCEF27262A06E700E8E735 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		B7CCEF40262A06E800E8E735 /* Debug */ = {
+		B7F2E83A2642F34F00A43811 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -678,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -688,7 +721,7 @@
 			};
 			name = Debug;
 		};
-		B7CCEF41262A06E800E8E735 /* Release */ = {
+		B7F2E83B2642F34F00A43811 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -733,7 +766,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -743,9 +776,9 @@
 			};
 			name = Release;
 		};
-		B7CCEF43262A06E800E8E735 /* Debug */ = {
+		B7F2E83D2642F34F00A43811 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4690A62E6BAC0AD29D7EFAF6 /* Pods-Droppyn.debug.xcconfig */;
+			baseConfigurationReference = F1080233515FF75389EB9612 /* Pods-Droppyn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -754,6 +787,7 @@
 				DEVELOPMENT_TEAM = 2C9T573ZCP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Droppyn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -765,9 +799,9 @@
 			};
 			name = Debug;
 		};
-		B7CCEF44262A06E800E8E735 /* Release */ = {
+		B7F2E83E2642F34F00A43811 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93F92D944EB0413F43179247 /* Pods-Droppyn.release.xcconfig */;
+			baseConfigurationReference = 0AD2B07A346B1129ED259EC2 /* Pods-Droppyn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -776,6 +810,7 @@
 				DEVELOPMENT_TEAM = 2C9T573ZCP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Droppyn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -787,16 +822,16 @@
 			};
 			name = Release;
 		};
-		B7CCEF46262A06E800E8E735 /* Debug */ = {
+		B7F2E8402642F34F00A43811 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26AB3982727C02B93409E72D /* Pods-DroppynTests.debug.xcconfig */;
+			baseConfigurationReference = 80F6763FDFE71317C833B702 /* Pods-DroppynTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C9T573ZCP;
 				INFOPLIST_FILE = DroppynTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -810,16 +845,16 @@
 			};
 			name = Debug;
 		};
-		B7CCEF47262A06E800E8E735 /* Release */ = {
+		B7F2E8412642F34F00A43811 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFA64FAF58E356A943BA33DE /* Pods-DroppynTests.release.xcconfig */;
+			baseConfigurationReference = F6C05F2ED20758FB2248C881 /* Pods-DroppynTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C9T573ZCP;
 				INFOPLIST_FILE = DroppynTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -833,9 +868,9 @@
 			};
 			name = Release;
 		};
-		B7CCEF49262A06E800E8E735 /* Debug */ = {
+		B7F2E8432642F34F00A43811 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8C8300FE421155BEAD59A17 /* Pods-Droppyn-DroppynUITests.debug.xcconfig */;
+			baseConfigurationReference = F4512A51BB091EE5A907D5EC /* Pods-Droppyn-DroppynUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -854,9 +889,9 @@
 			};
 			name = Debug;
 		};
-		B7CCEF4A262A06E800E8E735 /* Release */ = {
+		B7F2E8442642F34F00A43811 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64299345D14C7D2EDE47C97A /* Pods-Droppyn-DroppynUITests.release.xcconfig */;
+			baseConfigurationReference = 3ECCF2364F2D79B1E8257F05 /* Pods-Droppyn-DroppynUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -878,43 +913,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B7CCEF13262A06E700E8E735 /* Build configuration list for PBXProject "Droppyn" */ = {
+		B7F2E8122642F34E00A43811 /* Build configuration list for PBXProject "Droppyn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7CCEF40262A06E800E8E735 /* Debug */,
-				B7CCEF41262A06E800E8E735 /* Release */,
+				B7F2E83A2642F34F00A43811 /* Debug */,
+				B7F2E83B2642F34F00A43811 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7CCEF42262A06E800E8E735 /* Build configuration list for PBXNativeTarget "Droppyn" */ = {
+		B7F2E83C2642F34F00A43811 /* Build configuration list for PBXNativeTarget "Droppyn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7CCEF43262A06E800E8E735 /* Debug */,
-				B7CCEF44262A06E800E8E735 /* Release */,
+				B7F2E83D2642F34F00A43811 /* Debug */,
+				B7F2E83E2642F34F00A43811 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7CCEF45262A06E800E8E735 /* Build configuration list for PBXNativeTarget "DroppynTests" */ = {
+		B7F2E83F2642F34F00A43811 /* Build configuration list for PBXNativeTarget "DroppynTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7CCEF46262A06E800E8E735 /* Debug */,
-				B7CCEF47262A06E800E8E735 /* Release */,
+				B7F2E8402642F34F00A43811 /* Debug */,
+				B7F2E8412642F34F00A43811 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7CCEF48262A06E800E8E735 /* Build configuration list for PBXNativeTarget "DroppynUITests" */ = {
+		B7F2E8422642F34F00A43811 /* Build configuration list for PBXNativeTarget "DroppynUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7CCEF49262A06E800E8E735 /* Debug */,
-				B7CCEF4A262A06E800E8E735 /* Release */,
+				B7F2E8432642F34F00A43811 /* Debug */,
+				B7F2E8442642F34F00A43811 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B7CCEF10262A06E700E8E735 /* Project object */;
+	rootObject = B7F2E80F2642F34E00A43811 /* Project object */;
 }

@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct User {
+struct User : Hashable {
+    
     internal init(id: UUID = UUID(), username: String, email: String, firstname: String, surname: String, phone: String, photoURL: String, defultSize: SizeChart) {
         self.id = id
         self.username = username
@@ -22,13 +23,11 @@ struct User {
     let id: UUID
     var username: String
     let email: String
-    let firstname: String
-    let surname: String
-    let phone: String
-    let photoURL: String
+    var firstname: String
+    var surname: String
+    var phone: String
+    var photoURL: String
     let defultSize: SizeChart
     
-    
-
 }
 

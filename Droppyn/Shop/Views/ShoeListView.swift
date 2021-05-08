@@ -15,7 +15,7 @@ struct ShoeListView: View {
         NavigationView{
             List{
                 ForEach(shoeListVM.shoes){ shoe in
-                    NavigationLink(destination: ShoeDetailView(shoe: shoe)){
+                    NavigationLink(destination: OffersListView(shoe: shoe)){
                         ShoeItemView(shoe: shoe)
                     }
                 }

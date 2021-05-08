@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Brand :Identifiable, Codable{
+struct Brand :Identifiable, Codable, Hashable{
     var id = UUID()
     var name : String
     var image : String

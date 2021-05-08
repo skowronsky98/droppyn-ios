@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SizeChart: Identifiable {
+struct SizeChart: Identifiable, Hashable {
     var id: String
     var eu: String
     var type: String
