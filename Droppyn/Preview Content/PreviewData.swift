@@ -85,5 +85,13 @@ class PreviewData {
         Offer(id: UUID(), shoe: Shoes[0], size: SizeCharts[3], price: 100, user: Users[1])
     ]
     
+    static var Favorite = [
+        Offers[14],
+        Offers[15],
+        Offers[16],
+        Offers[11],
+        Offers[12]
+    ]
+    
 
 }

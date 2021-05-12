@@ -7,7 +7,32 @@
 
 import Foundation
 
-struct Offer: Identifiable {
+//struct OfferList {
+//    var offers: [Offer] = Array()
+//
+//
+//}
+//
+//struct FavoriteOfferList {
+//    var favoriteOffers: [Offer] = Array()
+//
+//    mutating func remove(_ offer: Offer){
+//        let index = favoriteOffers.firstIndex(matching: offer)!
+//        favoriteOffers.remove(at: index)
+//    }
+//    
+//    mutating func addOffer(_ offer: Offer) {
+//        favoriteOffers.append(offer)
+//    }
+//
+//}
+
+
+struct Offer: Identifiable, Equatable {
+    static func == (lhs: Offer, rhs: Offer) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
     let id: UUID
     let shoe: Shoe
     var size: SizeChart

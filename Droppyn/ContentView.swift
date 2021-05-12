@@ -28,7 +28,7 @@ struct ContentView: View {
                 Text("Chat")
             }
             
-            FavoriteView()
+            FavoriteListView()
                 .tabItem {
                    Image(systemName: "heart.fill")
                    Text("Favorite")
