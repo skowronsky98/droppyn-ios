@@ -28,10 +28,7 @@ import Foundation
 //}
 
 
-struct Offer: Identifiable, Equatable {
-    static func == (lhs: Offer, rhs: Offer) -> Bool {
-        return lhs.id == rhs.id
-    }
+struct Offer: Identifiable {
     
     let id: UUID
     let shoe: Shoe

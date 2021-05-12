@@ -3,16 +3,12 @@ import SwiftUI
 struct CreateOffer: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    @ObservedObject var myOffersViewModel: MyOffersViewModel
+    @StateObject var myOffersViewModel: MyOffersViewModel
     
-    @ObservedObject private var sizeChartVM = SizeChartViewModel()
-    @State private var sizeIndex = 0
-//    @State private var price = 0.0
-  
+    @StateObject private var createOfferVM = CreateOfferViewModel()
     
-    @State private var shoe: Shoe?
-    @State private var price: Double = 0
-   
+    @StateObject private var sizeChartVM = SizeChartViewModel()
+       
     @State private var isShoesPresented = false
     
     let formatter: NumberFormatter = {
@@ -26,7 +22,7 @@ struct CreateOffer: View {
         
         VStack {
 
-            if let shoe = shoe {
+            if let shoe = createOfferVM.shoe {
                 
                 Button(action: {
                     isShoesPresented = true
@@ -71,7 +67,7 @@ struct CreateOffer: View {
                 
                 Section(header: Text("Price")){
                     
-                    TextField("Price", value: $price, formatter: formatter)
+                    TextField("Price", value: $createOfferVM.price, formatter: formatter)
                                    .textFieldStyle(RoundedBorderTextFieldStyle())
                                     .keyboardType(.decimalPad)
                                    .padding(6)
@@ -79,7 +75,7 @@ struct CreateOffer: View {
                    // Spacer()
                     
                 Section(header: Text("Size")){
-                    SizeChartView(sizeChartVM: sizeChartVM, sizeIndex: $sizeIndex).padding(.top,16)
+                    SizeChartView(sizeChartVM: sizeChartVM, sizeIndex: $createOfferVM.sizeIndex).padding(.top,16)
                         .listRowInsets(EdgeInsets())
                         .padding(8)
 //                        .onAppear {
@@ -95,8 +91,8 @@ struct CreateOffer: View {
             //                print(sizeIndex)
 //                            myOffer.size = sizeChartVM.sizeChartModel[sizeIndex]
                             
-                            if let shoe = shoe {
-                                myOffersViewModel.addOffer(shoe: shoe, size: sizeChartVM.sizeChartModel[sizeIndex], price: price)
+                            if let shoe = createOfferVM.shoe {
+                                myOffersViewModel.addOffer(shoe: shoe, size: sizeChartVM.sizeChartModel[createOfferVM.sizeIndex], price: createOfferVM.price)
                             }
 
                             
@@ -114,7 +110,7 @@ struct CreateOffer: View {
             
         }.navigationBarTitle("Create Offer", displayMode: .inline)
         .sheet(isPresented: $isShoesPresented, content: {
-            SelectShoes(isShoesPresented: $isShoesPresented, shoe: $shoe)
+            SelectShoes(isShoesPresented: $isShoesPresented, shoe: $createOfferVM.shoe)
         })
 
         
@@ -126,7 +122,7 @@ struct CreateOffer: View {
 
 
 struct SelectShoes: View {
-    @ObservedObject private var shoeListVM = ShoeListViewModel()
+    @StateObject private var shoeListVM = ShoeListViewModel()
     @Binding var isShoesPresented: Bool
     @Binding var shoe: Shoe?
     

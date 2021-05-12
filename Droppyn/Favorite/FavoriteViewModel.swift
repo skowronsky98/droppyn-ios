@@ -19,7 +19,13 @@ class FavoriteViewModel: ObservableObject {
     }
     
     func isOfferFavorite(offer: Offer) -> Bool {
-        return favoriteOffers.contains(offer)
+        if favoriteOffers.firstIndex(matching: offer) != nil {
+            return true
+        }
+        
+        return false
+        //TODO change
+        //return favoriteOffers.contains(offer)
     }
     
     func addOfferToFavorite(offer: Offer){

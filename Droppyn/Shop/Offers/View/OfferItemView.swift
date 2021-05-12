@@ -25,17 +25,20 @@ struct OfferItemView: View {
                     
                 
                 VStack(alignment: .leading) {
-                    Text("\(offer.shoe.model)")
-                        .font(.headline)
+                    
+                    
+                    Text("\(offer.user.username)")
+                        .font(.title3)
                         .bold()
                         .padding(.bottom,1)
+                        .padding(.top)
                         
                         
-                    Text("\(offer.shoe.brand.name)")
-                        .font(.subheadline)
+//                    Text("\(offer.shoe.brand.name)")
+//                        .font(.subheadline)
                     
                     Text("\(offer.size.us, specifier: "%.1f")")
-                        .font(.subheadline)
+                        .font(.headline)
                         .bold()
                         .padding(.top,2)
                     

@@ -11,7 +11,7 @@ struct MyOfferView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var myOffer : Offer
     
-    @ObservedObject private var sizeChartVM = SizeChartViewModel()
+    @StateObject private var sizeChartVM = SizeChartViewModel()
     @State private var sizeIndex = 0
 //    @State private var price = 0.0
     
@@ -87,10 +87,12 @@ struct MyOfferView: View {
         }.navigationBarTitle("My Offer", displayMode: .inline)
 //        .padding(.bottom)
         .navigationBarItems(trailing: Button(action: {
-            
+            print(myOffer.active)
         }) {
             Toggle("", isOn: $myOffer.active)
 //                .toggleStyle(SwitchToggleStyle(tint: .red))
+            
+            
         })
         
     }

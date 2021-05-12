@@ -23,7 +23,8 @@ struct ContentView: View {
                  Text("Shop")
               }
             
-            ChatView().tabItem {
+            ChatView()
+                .tabItem {
                 Image(systemName: "bubble.left.fill")
                 Text("Chat")
             }

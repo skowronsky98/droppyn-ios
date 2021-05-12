@@ -55,7 +55,11 @@ struct OfferDetailView: View {
                 Section(header: Text("Size")){
                     HStack {
                         Spacer()
-                        Text("US \(offer.size.us, specifier: "%.1f") / EUR \(offer.size.eu) / UK \(offer.size.uk, specifier: "%.1f")")
+                        Text("US \(offer.size.us, specifier: "%.1f")")
+                        Spacer()
+                        Text("UK \(offer.size.uk, specifier: "%.1f")")
+                        Spacer()
+                        Text("EUR \(offer.size.eu)")
                         Spacer()
                     }
                 }

@@ -1,10 +1,7 @@
 import SwiftUI
 
 struct MyOffersListView: View {
-    @ObservedObject private var myOffersVM = MyOffersViewModel()
-    
-    @State private var isLinkActive = false
-    
+    @StateObject private var myOffersVM = MyOffersViewModel()
     
     var body: some View{
         NavigationView{
@@ -29,13 +26,9 @@ struct MyOffersListView: View {
                 })
             }.listStyle(PlainListStyle())
             .navigationBarTitle("My Offers")
-            .navigationBarItems(trailing: NavigationLink(destination: CreateOffer(myOffersViewModel: myOffersVM), isActive: $isLinkActive) {
-                Button(action: {
-                    self.isLinkActive = true
-                }) {
+            .navigationBarItems(trailing: NavigationLink(destination: CreateOffer(myOffersViewModel: myOffersVM)) {
                     Image(systemName: "plus.app").font(.title)
                 }
-            }
 
             )
             
