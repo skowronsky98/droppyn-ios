@@ -23,7 +23,7 @@ struct OfferDetailView: View {
         VStack {
             
             
-            Image("\(offer.shoe.image)")
+            Image("\(offer.shoe.media.imageUrl)")
                     .resizable()
                     .scaledToFit()
                     .padding()

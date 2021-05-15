@@ -9,7 +9,7 @@ import Foundation
 
 struct User : Hashable {
     
-    internal init(id: UUID = UUID(), username: String, email: String, firstname: String, surname: String, phone: String, photoURL: String, defultSize: SizeChart) {
+    internal init(id: String, username: String, email: String, firstname: String, surname: String, phone: String, photoURL: String, defultSize: SizeChart) {
         self.id = id
         self.username = username
         self.email = email
@@ -20,7 +20,7 @@ struct User : Hashable {
         self.defultSize = defultSize
     }
     
-    let id: UUID
+    let id: String
     var username: String
     let email: String
     var firstname: String

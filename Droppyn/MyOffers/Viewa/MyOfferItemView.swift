@@ -18,7 +18,7 @@ struct MyOfferItemView: View {
                 //.padding(.horizontal,8)
                 
             HStack{
-                Image("\(offer.shoe.image)")
+                Image("\(offer.shoe.media.imageUrl)")
                     .resizable()
                     .scaledToFit()
                     .padding(4)

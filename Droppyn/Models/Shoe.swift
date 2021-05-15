@@ -8,18 +8,17 @@
 import Foundation
 
 struct Shoe : Identifiable, Codable{
-    var id = UUID()
+    var id: String
     var model : String
     var brand : Brand
-    var image : String
-    var favorite : Bool
+    var media : Media
     
-    internal init(id: UUID = UUID(), model: String, brand: Brand, image: String, favorite: Bool) {
+    
+    internal init(id: ID = UUID().uuidString, model: String, brand: Brand, media: Media) {
         self.id = id
         self.model = model
         self.brand = brand
-        self.image = image
-        self.favorite = favorite
+        self.media = media
     }
     
 }

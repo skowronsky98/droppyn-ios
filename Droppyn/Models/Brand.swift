@@ -8,14 +8,14 @@
 import Foundation
 
 struct Brand :Identifiable, Codable, Hashable{
-    var id = UUID()
+    var id: String
     var name : String
-    var image : String
+    var media : Media
     
-    init(id: UUID = UUID(), name: String, image: String) {
+    init(id: String, name: String, media: Media) {
         self.id = id
         self.name = name
-        self.image = image
+        self.media = media
     }
     
 }

@@ -14,7 +14,7 @@ struct ShoeDetailView: View {
     var body: some View {
         
         VStack {
-            Image("\(shoe.image)")
+            Image("\(shoe.media.imageUrl)")
                 .resizable()
                 .scaledToFit()
                 .fixedSize(horizontal: false, vertical: true)
@@ -32,6 +32,6 @@ struct ShoeDetailView: View {
 
 struct ShoeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ShoeDetailView(shoe: Shoe(id: UUID(), model: "Air Max", brand: Brand(name: "Nike", image: "none"), image: "shoe", favorite: false))
+        ShoeDetailView(shoe: PreviewData.Shoes[0])
     }
 }

@@ -14,7 +14,7 @@ struct ShoeItemView: View {
        
                 
             HStack{
-                Image("\(shoe.image)")
+                Image("\(shoe.media.imageUrl)")
                     .resizable()
                     .scaledToFit()
                     .padding(4)
@@ -46,7 +46,7 @@ struct ShoeItemView: View {
 
 struct ShoeItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ShoeItemView(shoe: Shoe(id: UUID(), model: "Air Max", brand: Brand(name: "Nike", image: "none"), image: "shoe", favorite: false))
+        ShoeItemView(shoe: PreviewData.Shoes[0])
 //        shoe: .constant(Shoe(id: UUID(), model: "Air Max", brand: "Nike", image: "shoe"))
     }
 }

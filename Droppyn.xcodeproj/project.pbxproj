@@ -32,6 +32,12 @@
 		B7330FAA2642F50F0014EA1C /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330FA92642F50F0014EA1C /* Array+Identifiable.swift */; };
 		B7330FAF2642F5190014EA1C /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330FAE2642F5190014EA1C /* PreviewData.swift */; };
 		B754A29B264BD31E00045DE4 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B754A29A264BD31E00045DE4 /* FavoriteViewModel.swift */; };
+		B776A1C6264FF84A00BBB4AC /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776A1C5264FF84A00BBB4AC /* Media.swift */; };
+		B776A1D0264FFAF100BBB4AC /* UserDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776A1CF264FFAF100BBB4AC /* UserDTO.swift */; };
+		B776A1D8264FFBB900BBB4AC /* BrandDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776A1D7264FFBB900BBB4AC /* BrandDTO.swift */; };
+		B776A1DD264FFC2900BBB4AC /* SizeChartDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776A1DC264FFC2900BBB4AC /* SizeChartDTO.swift */; };
+		B776A1E22650007800BBB4AC /* ShoeDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776A1E12650007800BBB4AC /* ShoeDTO.swift */; };
+		B776A1E72650043F00BBB4AC /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B776A1E62650043F00BBB4AC /* APIController.swift */; };
 		B7A864FA2642FAA3009E2191 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A864F92642FAA3009E2191 /* ChatView.swift */; };
 		B7DAA32E2646E682007026B7 /* OffersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA32D2646E682007026B7 /* OffersListView.swift */; };
 		B7DAA3372646E69E007026B7 /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DAA3362646E69E007026B7 /* OfferView.swift */; };
@@ -95,6 +101,12 @@
 		B7330FA92642F50F0014EA1C /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		B7330FAE2642F5190014EA1C /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		B754A29A264BD31E00045DE4 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		B776A1C5264FF84A00BBB4AC /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		B776A1CF264FFAF100BBB4AC /* UserDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDTO.swift; sourceTree = "<group>"; };
+		B776A1D7264FFBB900BBB4AC /* BrandDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandDTO.swift; sourceTree = "<group>"; };
+		B776A1DC264FFC2900BBB4AC /* SizeChartDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeChartDTO.swift; sourceTree = "<group>"; };
+		B776A1E12650007800BBB4AC /* ShoeDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoeDTO.swift; sourceTree = "<group>"; };
+		B776A1E62650043F00BBB4AC /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		B7A864F92642FAA3009E2191 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		B7DAA32D2646E682007026B7 /* OffersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersListView.swift; sourceTree = "<group>"; };
 		B7DAA3362646E69E007026B7 /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
@@ -202,6 +214,7 @@
 		B7330F712642F4E10014EA1C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B776A1C5264FF84A00BBB4AC /* Media.swift */,
 				B7330F722642F4E10014EA1C /* Shoe.swift */,
 				B7330F752642F4E10014EA1C /* User.swift */,
 				B7330F772642F4E10014EA1C /* SizeChart.swift */,
@@ -275,6 +288,26 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B776A1CD264FFADA00BBB4AC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B776A1CE264FFAE200BBB4AC /* DTO */,
+				B776A1E62650043F00BBB4AC /* APIController.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B776A1CE264FFAE200BBB4AC /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				B776A1CF264FFAF100BBB4AC /* UserDTO.swift */,
+				B776A1D7264FFBB900BBB4AC /* BrandDTO.swift */,
+				B776A1DC264FFC2900BBB4AC /* SizeChartDTO.swift */,
+				B776A1E12650007800BBB4AC /* ShoeDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		B7A864F02642FA71009E2191 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +361,7 @@
 		B7F2E8192642F34E00A43811 /* Droppyn */ = {
 			isa = PBXGroup;
 			children = (
+				B776A1CD264FFADA00BBB4AC /* Network */,
 				B7A864F02642FA71009E2191 /* Chat */,
 				B7330F892642F4E10014EA1C /* Favorite */,
 				B7330F712642F4E10014EA1C /* Models */,
@@ -614,28 +648,34 @@
 				B7330F8E2642F4E10014EA1C /* ShoeOfferDetailView.swift in Sources */,
 				B7DAA34D2646EEA2007026B7 /* OffersViewModel.swift in Sources */,
 				B7DAA3372646E69E007026B7 /* OfferView.swift in Sources */,
+				B776A1D0264FFAF100BBB4AC /* UserDTO.swift in Sources */,
 				B7330FA02642F4E10014EA1C /* MyOfferItemView.swift in Sources */,
 				B7330FA32642F4E10014EA1C /* ProfileViewModel.swift in Sources */,
 				B7F2E81D2642F34E00A43811 /* ContentView.swift in Sources */,
+				B776A1C6264FF84A00BBB4AC /* Media.swift in Sources */,
 				B7330F8B2642F4E10014EA1C /* ShoeListViewModel.swift in Sources */,
 				B7330F9F2642F4E10014EA1C /* MyOfferView.swift in Sources */,
 				B7330F9E2642F4E10014EA1C /* CreateOffer.swift in Sources */,
 				B7330FA12642F4E10014EA1C /* MyOffersListView.swift in Sources */,
 				B7F2E81B2642F34E00A43811 /* DroppynApp.swift in Sources */,
 				B7330F902642F4E10014EA1C /* SizeChartViewModel.swift in Sources */,
+				B776A1E72650043F00BBB4AC /* APIController.swift in Sources */,
 				B7330F9D2642F4E10014EA1C /* MyOffersViewModel.swift in Sources */,
 				B7330FA22642F4E10014EA1C /* ProfileView.swift in Sources */,
 				B7330FAA2642F50F0014EA1C /* Array+Identifiable.swift in Sources */,
 				B7330FA42642F4E10014EA1C /* FavoriteListView.swift in Sources */,
+				B776A1E22650007800BBB4AC /* ShoeDTO.swift in Sources */,
 				B7330F8F2642F4E10014EA1C /* SizeChartView.swift in Sources */,
 				B7330FAF2642F5190014EA1C /* PreviewData.swift in Sources */,
 				B754A29B264BD31E00045DE4 /* FavoriteViewModel.swift in Sources */,
+				B776A1DD264FFC2900BBB4AC /* SizeChartDTO.swift in Sources */,
 				B7DAA3652646FCAB007026B7 /* OfferDetailView.swift in Sources */,
 				B7A864FA2642FAA3009E2191 /* ChatView.swift in Sources */,
 				B7330F912642F4E10014EA1C /* Shoe.swift in Sources */,
 				B7330F962642F4E10014EA1C /* SizeChart.swift in Sources */,
 				B7330F992642F4E10014EA1C /* Offer.swift in Sources */,
 				B7DAA3602646FBE3007026B7 /* OfferItemView.swift in Sources */,
+				B776A1D8264FFBB900BBB4AC /* BrandDTO.swift in Sources */,
 				B7330F942642F4E10014EA1C /* User.swift in Sources */,
 				B7330F8D2642F4E10014EA1C /* ShoeItemView.swift in Sources */,
 				B7DAA32E2646E682007026B7 /* OffersListView.swift in Sources */,

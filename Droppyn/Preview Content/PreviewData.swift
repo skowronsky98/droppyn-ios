@@ -9,33 +9,36 @@ import Foundation
 
 class PreviewData {
     
-    static var MyUser = User(username: "gierczak", email: "norbert.gierczak@gmail.com", firstname: "Adam", surname: "Małysz", phone: "909876345", photoURL: "profile", defultSize: SizeCharts[0])
+    static let shoeMedia = Media(imageUrl: "shoe", smallImageUrl: "", thumbUrl: "")
+    
+    
+    static var MyUser = User(id: "3",username: "gierczak", email: "norbert.gierczak@gmail.com", firstname: "Adam", surname: "Małysz", phone: "909876345", photoURL: "profile", defultSize: SizeCharts[0])
     
     static var Users = [
-        User(username: "essa", email: "norbert.gierczak@gmail.com", firstname: "Piotr", surname: "Kowalski", phone: "909876345", photoURL: "profile-1", defultSize: SizeCharts[0]),
-        User(username: "admin", email: "norbert.gierczak@gmail.com", firstname: "Adma", surname: "Mickiewicz", phone: "909876345", photoURL: "profile", defultSize: SizeCharts[0]),
-        User(username: "100pa", email: "norbert.gierczak@gmail.com", firstname: "Łukasz", surname: "Nowak", phone: "909876345", photoURL: "profile-1", defultSize: SizeCharts[0]),
-        User(username: "tibijczyk", email: "norbert.gierczak@gmail.com", firstname: "Mateusz", surname: "Kłos", phone: "909876345", photoURL: "profile", defultSize: SizeCharts[0])
+        User(id: "1",username: "essa", email: "norbert.gierczak@gmail.com", firstname: "Piotr", surname: "Kowalski", phone: "909876345", photoURL: "profile-1", defultSize: SizeCharts[0]),
+        User(id: "2",username: "admin", email: "norbert.gierczak@gmail.com", firstname: "Adma", surname: "Mickiewicz", phone: "909876345", photoURL: "profile", defultSize: SizeCharts[0]),
+        User(id: "3",username: "100pa", email: "norbert.gierczak@gmail.com", firstname: "Łukasz", surname: "Nowak", phone: "909876345", photoURL: "profile-1", defultSize: SizeCharts[0]),
+        User(id: "4",username: "tibijczyk", email: "norbert.gierczak@gmail.com", firstname: "Mateusz", surname: "Kłos", phone: "909876345", photoURL: "profile", defultSize: SizeCharts[0])
     ]
     
     
     static let Brands = [
-        Brand(name: "Nike", image: "nike"),
-        Brand(name: "Adidas", image: "adidas")
+        Brand(id: UUID().uuidString, name: "Nike", media: Media(imageUrl: "nike", smallImageUrl: "", thumbUrl: "")),
+        Brand(id: UUID().uuidString, name: "Adidas", media: Media(imageUrl: "adidas", smallImageUrl: "", thumbUrl: ""))
     ]
     
     static let Shoes = [
-        Shoe(model: "Air Max 97", brand: Brands[0], image: "shoe", favorite: false),
-        Shoe(model: "Air Force 1", brand: Brands[0], image: "shoe", favorite: false),
-        Shoe(model: "Air Jordan 1", brand: Brands[0], image: "shoe", favorite: false),
-        Shoe(model: "Yeezy Boost 350", brand: Brands[1], image: "shoe", favorite: false),
-        Shoe(model: "Ultraboost 1.0", brand: Brands[1], image: "shoe", favorite: false),
-        Shoe(model: "Air Max 1", brand: Brands[0], image: "shoe", favorite: false),
-        Shoe(model: "Ultraboost 2.0", brand: Brands[1], image: "shoe", favorite: false),
-        Shoe(model: "Air Jordan Retro 4", brand: Brands[0], image: "shoe", favorite: false),
-        Shoe(model: "Tekkno", brand: Brands[0], image: "shoe", favorite: false),
-        Shoe(model: "Trainer", brand: Brands[0], image: "shoe", favorite: false),
-        Shoe(model: "Flyknit Racer", brand: Brands[0], image: "shoe", favorite: false)
+        Shoe(model: "Air Max 97", brand: Brands[0], media: shoeMedia),
+        Shoe(model: "Air Force 1", brand: Brands[0], media: shoeMedia),
+        Shoe(model: "Air Jordan 1", brand: Brands[0], media: shoeMedia),
+        Shoe(model: "Yeezy Boost 350", brand: Brands[1], media: shoeMedia),
+        Shoe(model: "Ultraboost 1.0", brand: Brands[1], media: shoeMedia),
+        Shoe(model: "Air Max 1", brand: Brands[0], media: shoeMedia),
+        Shoe(model: "Ultraboost 2.0", brand: Brands[1], media: shoeMedia),
+        Shoe(model: "Air Jordan Retro 4", brand: Brands[0], media: shoeMedia),
+        Shoe(model: "Tekkno", brand: Brands[0], media: shoeMedia),
+        Shoe(model: "Trainer", brand: Brands[0], media: shoeMedia),
+        Shoe(model: "Flyknit Racer", brand: Brands[0], media: shoeMedia)
     ]
     
     static var SizeCharts = [

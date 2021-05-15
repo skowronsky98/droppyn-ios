@@ -28,7 +28,7 @@ struct CreateOffer: View {
                     isShoesPresented = true
                 }){
                     VStack {
-                        Image("\(shoe.image)")
+                        Image("\(shoe.media.imageUrl)")
                             .resizable()
                             .scaledToFit()
                             .padding()
