@@ -30,11 +30,12 @@ import Foundation
 
 struct Offer: Identifiable {
     
-    let id: UUID
+    let id: String
     let shoe: Shoe
     var size: SizeChart
     var price: Double
     var active = true
+    var deleted = false
     var bio = ""
     let user: User
 }

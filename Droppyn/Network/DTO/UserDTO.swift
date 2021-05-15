@@ -8,12 +8,18 @@
 import Foundation
 
 struct UserDTO: Codable, Identifiable {
-    let id: String
+    var id: String
     var username: String
-    let email: String
+    var email: String
     var firstname: String
     var surname: String
     var phone: String
     var photoURL: String
-    let defultSize: String
+    //var defultSize: SizeChartDTO
+}
+
+class UserMapper {
+    static func toDomain(userDTO: UserDTO) -> User{
+        return User(id: userDTO.id, username: userDTO.username, email: userDTO.email, firstname: userDTO.firstname, surname: userDTO.surname, phone: userDTO.phone, photoURL: userDTO.photoURL, defultSize: PreviewData.SizeCharts[0])
+    }
 }

@@ -11,7 +11,7 @@ struct MyOfferView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var myOffer : Offer
     
-    @StateObject private var sizeChartVM = SizeChartViewModel()
+    @ObservedObject var sizeChartVM : SizeChartViewModel
     @State private var sizeIndex = 0
 //    @State private var price = 0.0
     
@@ -61,7 +61,7 @@ struct MyOfferView: View {
                         .listRowInsets(EdgeInsets())
                         .padding(8)
                         .onAppear {
-                            self.sizeIndex = sizeChartVM.sizeChartModel.firstIndex(matching: myOffer.size)!
+                            //self.sizeIndex = sizeChartVM.sizeChartModel.firstIndex(matching: myOffer.size)!
                         }
                 }
                 
@@ -100,6 +100,6 @@ struct MyOfferView: View {
 
 struct MyOfferView_Previews: PreviewProvider {
     static var previews: some View {
-        MyOfferView(myOffer: .constant(PreviewData.MyOffers[0]))
+        MyOfferView(myOffer: .constant(PreviewData.MyOffers[0]), sizeChartVM: SizeChartViewModel())
     }
 }

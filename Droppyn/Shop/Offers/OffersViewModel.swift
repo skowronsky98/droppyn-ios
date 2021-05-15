@@ -6,15 +6,24 @@
 //
 
 import Foundation
+import Combine
 
 class OffersViewModel: ObservableObject {
-    @Published var offers: [Offer]
+    @Published var offers: [Offer] = []
     var shoe: Shoe
     
+    private var offerSubscriber: AnyCancellable?
+    
+    func fetchOffers() {
+        offerSubscriber = APIController().offersPublisher
+            .sink(receiveCompletion: {_ in }, receiveValue: { (offersDTO) in
+                self.offers = OfferMapper.toDomain(offersDTO: offersDTO)
+            })
+    }
     
     init(shoe: Shoe) {
         self.shoe = shoe
-        offers = PreviewData.Offers.filter{ $0.shoe.id == shoe.id }
+        fetchOffers()
     }
     
 

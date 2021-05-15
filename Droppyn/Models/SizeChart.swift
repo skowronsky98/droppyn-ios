@@ -13,5 +13,5 @@ struct SizeChart: Identifiable, Hashable {
     var type: String
     var uk: Double
     var us: Double
-    var brand: Brand
+    var brandID: String
 }

@@ -13,5 +13,23 @@ struct SizeChartDTO: Codable, Identifiable {
     var type: String
     var uk: Double
     var us: Double
-    var brand: Brand
+    var brandId: String
+    
+
+}
+
+class SizeChartMapper {
+    
+    static func toDomain(sizeChartDTO: SizeChartDTO) -> SizeChart{
+        return SizeChart(id: sizeChartDTO.id, eu: sizeChartDTO.eu, type: sizeChartDTO.type, uk: sizeChartDTO.uk, us: sizeChartDTO.us, brandID: sizeChartDTO.brandId)
+    }
+    
+    static func toDomain(sizeChartsDTO: [SizeChartDTO]) -> [SizeChart]{
+        var sizeCharts:[SizeChart] = []
+        for item in sizeChartsDTO {
+            sizeCharts.append(SizeChart(id: item.id, eu: item.eu, type: item.type, uk: item.uk, us: item.us, brandID: item.brandId))
+        }
+        
+        return sizeCharts
+    }
 }

@@ -6,12 +6,23 @@
 //
 
 import Foundation
+import Combine
 
 class FavoriteViewModel: ObservableObject {
-    @Published var favoriteOffers: [Offer]
+    @Published var favoriteOffers: [Offer] = []
+    
+    private var favoriteOfferSubscriber: AnyCancellable?
+    
+    func fetchFavoriteOffers() {
+        favoriteOfferSubscriber = APIController().favoriteOffersPublisher
+            .sink(receiveCompletion: {_ in }, receiveValue: { (favoriteOffersDTO) in
+                self.favoriteOffers = OfferMapper.toDomain(offersDTO: favoriteOffersDTO)
+            })
+    }
     
     init() {
-        favoriteOffers = PreviewData.Favorite
+//        favoriteOffers = PreviewData.Favorite
+        fetchFavoriteOffers()
     }
     
     func deleteItem(index: Int){

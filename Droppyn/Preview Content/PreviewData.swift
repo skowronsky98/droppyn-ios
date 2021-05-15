@@ -23,8 +23,8 @@ class PreviewData {
     
     
     static let Brands = [
-        Brand(id: UUID().uuidString, name: "Nike", media: Media(imageUrl: "nike", smallImageUrl: "", thumbUrl: "")),
-        Brand(id: UUID().uuidString, name: "Adidas", media: Media(imageUrl: "adidas", smallImageUrl: "", thumbUrl: ""))
+        Brand(id: "1", name: "Nike", media: Media(imageUrl: "nike", smallImageUrl: "", thumbUrl: "")),
+        Brand(id: "2", name: "Adidas", media: Media(imageUrl: "adidas", smallImageUrl: "", thumbUrl: ""))
     ]
     
     static let Shoes = [
@@ -42,50 +42,50 @@ class PreviewData {
     ]
     
     static var SizeCharts = [
-        SizeChart(id: "a", eu: "36.5", type: "m", uk: 4.0, us: 4.5, brand: Brands[0]),
-        SizeChart(id: "s", eu: "47.5", type: "m", uk: 4.5, us: 5.0, brand: Brands[0]),
-        SizeChart(id: "1", eu: "38", type: "m", uk: 5.0, us: 5.5, brand: Brands[0]),
-        SizeChart(id: "2", eu: "38.5", type: "m", uk: 5.5, us: 6.0, brand: Brands[0]),
-        SizeChart(id: "3", eu: "40", type: "m", uk: 6.0, us: 6.5, brand: Brands[0]),
-        SizeChart(id: "4", eu: "40.5", type: "m", uk: 6.0, us: 7.0, brand: Brands[0]),
-        SizeChart(id: "5", eu: "41", type: "m", uk: 9.0, us: 7.5, brand: Brands[0]),
-        SizeChart(id: "7", eu: "42", type: "m", uk: 7.5, us: 8.0, brand: Brands[1]),
-        SizeChart(id: "8", eu: "42.5", type: "m", uk: 8.5, us: 8.5, brand: Brands[0]),
-        SizeChart(id: "9", eu: "43", type: "m", uk: 8.0, us: 9.0, brand: Brands[0]),
-        SizeChart(id: "10", eu: "44", type: "m", uk: 8.5, us: 9.5, brand: Brands[0]),
-        SizeChart(id: "11", eu: "44.5", type: "m", uk: 9.0, us: 10.0, brand: Brands[0]),
-        SizeChart(id: "12", eu: "46", type: "m", uk: 7.5, us: 10.5, brand: Brands[1]),
-        SizeChart(id: "13", eu: "47", type: "m", uk: 8.0, us: 11.0, brand: Brands[1])
+        SizeChart(id: "a", eu: "36.5", type: "m", uk: 4.0, us: 4.5, brandID: "1"),
+        SizeChart(id: "s", eu: "47.5", type: "m", uk: 4.5, us: 5.0, brandID: "1"),
+        SizeChart(id: "1", eu: "38", type: "m", uk: 5.0, us: 5.5, brandID: "1"),
+        SizeChart(id: "2", eu: "38.5", type: "m", uk: 5.5, us: 6.0, brandID: "1"),
+        SizeChart(id: "3", eu: "40", type: "m", uk: 6.0, us: 6.5, brandID: "1"),
+        SizeChart(id: "4", eu: "40.5", type: "m", uk: 6.0, us: 7.0, brandID: "1"),
+        SizeChart(id: "5", eu: "41", type: "m", uk: 9.0, us: 7.5, brandID: "1"),
+        SizeChart(id: "7", eu: "42", type: "m", uk: 7.5, us: 8.0, brandID: "1"),
+        SizeChart(id: "8", eu: "42.5", type: "m", uk: 8.5, us: 8.5, brandID: "1"),
+        SizeChart(id: "9", eu: "43", type: "m", uk: 8.0, us: 9.0, brandID: "1"),
+        SizeChart(id: "10", eu: "44", type: "m", uk: 8.5, us: 9.5, brandID: "1"),
+        SizeChart(id: "11", eu: "44.5", type: "m", uk: 9.0, us: 10.0, brandID: "1"),
+        SizeChart(id: "12", eu: "46", type: "m", uk: 7.5, us: 10.5, brandID: "1"),
+        SizeChart(id: "13", eu: "47", type: "m", uk: 8.0, us: 11.0, brandID: "1")
     
     ]
     
     static var MyOffers = [
-        Offer(id: UUID(), shoe: Shoes[1], size: SizeCharts[0], price: 130, user: MyUser),
-        Offer(id: UUID(), shoe: Shoes[0], size: SizeCharts[1], price: 120, active: false, user: MyUser),
-        Offer(id: UUID(), shoe: Shoes[2], size: SizeCharts[1], price: 100, user: MyUser),
-        Offer(id: UUID(), shoe: Shoes[0], size: SizeCharts[3], price: 100, user: MyUser),
-        Offer(id: UUID(), shoe: Shoes[3], size: SizeCharts[4], price: 500, active: false, user: MyUser)
+        Offer(id: UUID().uuidString, shoe: Shoes[1], size: SizeCharts[0], price: 130, user: MyUser),
+        Offer(id: UUID().uuidString, shoe: Shoes[0], size: SizeCharts[1], price: 120, active: false, user: MyUser),
+        Offer(id: UUID().uuidString, shoe: Shoes[2], size: SizeCharts[1], price: 100, user: MyUser),
+        Offer(id: UUID().uuidString, shoe: Shoes[0], size: SizeCharts[3], price: 100, user: MyUser),
+        Offer(id: UUID().uuidString, shoe: Shoes[3], size: SizeCharts[4], price: 500, active: false, user: MyUser)
     ]
     
     
     static var Offers = [
-        Offer(id: UUID(), shoe: Shoes[1], size: SizeCharts[0], price: 1324, user: Users[0]),
-        Offer(id: UUID(), shoe: Shoes[10], size: SizeCharts[1], price: 43, user: Users[0]),
-        Offer(id: UUID(), shoe: Shoes[9], size: SizeCharts[1], price: 192, user: Users[0]),
-        Offer(id: UUID(), shoe: Shoes[6], size: SizeCharts[3], price: 404, user: Users[2]),
-        Offer(id: UUID(), shoe: Shoes[5], size: SizeCharts[4], price: 500, user: Users[2]),
-        Offer(id: UUID(), shoe: Shoes[4], size: SizeCharts[0], price: 130, user: Users[1]),
-        Offer(id: UUID(), shoe: Shoes[3], size: SizeCharts[1], price: 120, user: Users[1]),
-        Offer(id: UUID(), shoe: Shoes[4], size: SizeCharts[1], price: 100, user: Users[1]),
-        Offer(id: UUID(), shoe: Shoes[4], size: SizeCharts[3], price: 100, user: Users[2]),
-        Offer(id: UUID(), shoe: Shoes[1], size: SizeCharts[0], price: 100, user: Users[3]),
-        Offer(id: UUID(), shoe: Shoes[0], size: SizeCharts[1], price: 120, user: Users[3]),
-        Offer(id: UUID(), shoe: Shoes[2], size: SizeCharts[1], price: 100, user: Users[3]),
-        Offer(id: UUID(), shoe: Shoes[0], size: SizeCharts[3], price: 100, user: Users[3]),
-        Offer(id: UUID(), shoe: Shoes[1], size: SizeCharts[0], price: 110, user: Users[2]),
-        Offer(id: UUID(), shoe: Shoes[0], size: SizeCharts[1], price: 120, user: Users[2]),
-        Offer(id: UUID(), shoe: Shoes[2], size: SizeCharts[1], price: 100, user: Users[1]),
-        Offer(id: UUID(), shoe: Shoes[0], size: SizeCharts[3], price: 100, user: Users[1])
+        Offer(id: UUID().uuidString, shoe: Shoes[1], size: SizeCharts[0], price: 1324, user: Users[0]),
+        Offer(id: UUID().uuidString, shoe: Shoes[10], size: SizeCharts[1], price: 43, user: Users[0]),
+        Offer(id: UUID().uuidString, shoe: Shoes[9], size: SizeCharts[1], price: 192, user: Users[0]),
+        Offer(id: UUID().uuidString, shoe: Shoes[6], size: SizeCharts[3], price: 404, user: Users[2]),
+        Offer(id: UUID().uuidString, shoe: Shoes[5], size: SizeCharts[4], price: 500, user: Users[2]),
+        Offer(id: UUID().uuidString, shoe: Shoes[4], size: SizeCharts[0], price: 130, user: Users[1]),
+        Offer(id: UUID().uuidString, shoe: Shoes[3], size: SizeCharts[1], price: 120, user: Users[1]),
+        Offer(id: UUID().uuidString, shoe: Shoes[4], size: SizeCharts[1], price: 100, user: Users[1]),
+        Offer(id: UUID().uuidString, shoe: Shoes[4], size: SizeCharts[3], price: 100, user: Users[2]),
+        Offer(id: UUID().uuidString, shoe: Shoes[1], size: SizeCharts[0], price: 100, user: Users[3]),
+        Offer(id: UUID().uuidString, shoe: Shoes[0], size: SizeCharts[1], price: 120, user: Users[3]),
+        Offer(id: UUID().uuidString, shoe: Shoes[2], size: SizeCharts[1], price: 100, user: Users[3]),
+        Offer(id: UUID().uuidString, shoe: Shoes[0], size: SizeCharts[3], price: 100, user: Users[3]),
+        Offer(id: UUID().uuidString, shoe: Shoes[1], size: SizeCharts[0], price: 110, user: Users[2]),
+        Offer(id: UUID().uuidString, shoe: Shoes[0], size: SizeCharts[1], price: 120, user: Users[2]),
+        Offer(id: UUID().uuidString, shoe: Shoes[2], size: SizeCharts[1], price: 100, user: Users[1]),
+        Offer(id: UUID().uuidString, shoe: Shoes[0], size: SizeCharts[3], price: 100, user: Users[1])
     ]
     
     static var Favorite = [

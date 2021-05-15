@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Combine
 
 class MyOffersViewModel: ObservableObject {
-    @Published var myOffers: [Offer]
+    @Published var myOffers: [Offer] = []
     private var user: User
     
 //    func changeShoe(shoe : Shoe){
@@ -17,10 +18,23 @@ class MyOffersViewModel: ObservableObject {
 //        }
 //    }
     
+    private var myOfferSubscriber: AnyCancellable?
+    
+    
+    
+    func fetchMyOffers() {
+        myOfferSubscriber = APIController().myOffersPublisher
+            .sink(receiveCompletion: {_ in }, receiveValue: { (myOffersDTO) in
+                self.myOffers = OfferMapper.toDomain(offersDTO: myOffersDTO)
+            })
+    }
+    
+    
     init() {
         //load const data
-        myOffers = PreviewData.MyOffers
+//        myOffers = PreviewData.MyOffers
         user = PreviewData.MyUser
+        fetchMyOffers()
     
     }
 
@@ -29,7 +43,8 @@ class MyOffersViewModel: ObservableObject {
     }
     
     func addOffer(shoe: Shoe, size: SizeChart, price: Double){
-        myOffers.append(Offer(id: UUID(), shoe: shoe, size: size, price: price, user: user))
+        myOffers.append(Offer(id: UUID().uuidString, shoe: shoe, size: size, price: price, user: user))
+        
     }
     
 

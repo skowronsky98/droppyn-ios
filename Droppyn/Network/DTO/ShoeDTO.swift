@@ -14,6 +14,14 @@ struct ShoeDTO: Codable, Identifiable  {
     var media : Media
 }
 class ShoeMapper{
+    
+    static func toDomain(shoeDTO: ShoeDTO) -> Shoe{
+        return Shoe(id: shoeDTO.id,
+                    model: shoeDTO.model,
+                    brand: BrandMapper.toDomain(brandDTO: shoeDTO.brand),
+                    media: shoeDTO.media)
+    }
+    
     static func toDomain(shoesDTO: [ShoeDTO]) -> [Shoe]{
         var shoes:[Shoe] = []
         for item in shoesDTO {

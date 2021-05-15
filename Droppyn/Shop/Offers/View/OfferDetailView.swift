@@ -10,7 +10,7 @@ import SwiftUI
 struct OfferDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    @StateObject private var sizeChartVM = SizeChartViewModel()
+    
     @StateObject private var favoriteVM = FavoriteViewModel()
     
     @State private var favorite = false

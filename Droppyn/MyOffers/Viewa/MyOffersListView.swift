@@ -2,7 +2,7 @@ import SwiftUI
 
 struct MyOffersListView: View {
     @StateObject private var myOffersVM = MyOffersViewModel()
-    
+    @StateObject private var sizeChartVM = SizeChartViewModel()
     var body: some View{
         NavigationView{
             List{
@@ -11,7 +11,7 @@ struct MyOffersListView: View {
                     ZStack {
                         MyOfferItemView(offer: offer)
                         
-                        NavigationLink(destination: MyOfferView(myOffer: self.$myOffersVM.myOffers[self.myOffersVM.myOffers.firstIndex(matching: offer)!])){
+                        NavigationLink(destination: MyOfferView(myOffer: self.$myOffersVM.myOffers[self.myOffersVM.myOffers.firstIndex(matching: offer)!], sizeChartVM: sizeChartVM)){
                             EmptyView()
                             
                         }
@@ -26,7 +26,7 @@ struct MyOffersListView: View {
                 })
             }.listStyle(PlainListStyle())
             .navigationBarTitle("My Offers")
-            .navigationBarItems(trailing: NavigationLink(destination: CreateOffer(myOffersViewModel: myOffersVM)) {
+            .navigationBarItems(trailing: NavigationLink(destination: CreateOffer(myOffersViewModel: myOffersVM, sizeChartVM: sizeChartVM)) {
                     Image(systemName: "plus.app").font(.title)
                 }
 
