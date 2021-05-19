@@ -47,8 +47,8 @@ class MyOffersViewModel: ObservableObject {
         URLSession.shared.dataTask(with: request) {(data, res, err ) in
             do {
                 if let data = data {
-                    let result = try JSONDecoder().decode(OfferDTO.self, from: data)
-                    print(result)
+                    _ = try JSONDecoder().decode(OfferDTO.self, from: data)
+//                    print(result)
                     self.fetchMyOffers()
                 }
             } catch (let error) {
@@ -126,13 +126,15 @@ class MyOffersViewModel: ObservableObject {
         
         
         URLSession.shared.dataTask(with: request) {(data, res, err ) in
-            if let err = err {
-                print(err)
-            } else {
-                
-                return
+            do {
+                if let data = data {
+        
+//                    print(result)
+                    self.fetchMyOffers()
+                }
+            } catch (let error) {
+                print(error)
             }
-            self.fetchMyOffers()
         }.resume()
     }
     
