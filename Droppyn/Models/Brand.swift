@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Brand :Identifiable, Codable, Hashable{
+struct Brand :Identifiable{
     var id: String
     var name : String
     var media : Media

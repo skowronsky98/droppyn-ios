@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct User : Hashable {
+struct User {
     
     internal init(id: String, username: String, email: String, firstname: String, surname: String, phone: String, photoURL: String, defultSize: SizeChart) {
         self.id = id

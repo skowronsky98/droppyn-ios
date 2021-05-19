@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Shoe : Identifiable, Codable{
+struct Shoe : Identifiable{
     var id: String
     var model : String
     var brand : Brand

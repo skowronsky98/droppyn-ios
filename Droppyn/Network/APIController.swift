@@ -41,6 +41,11 @@ class APIController {
             .eraseToAnyPublisher()
     }
     
+   
+
+    
+    
+    
     private let favoriteOffersPath = "https://droppyn.herokuapp.com//offer/favoriteoffer/all?userId=609ed22c98cb1221fdbecea7"
     var favoriteOffersPublisher: AnyPublisher<[OfferDTO],Error> {
         let url = URL(string: favoriteOffersPath)!
@@ -51,6 +56,7 @@ class APIController {
             .eraseToAnyPublisher()
     }
     
+    
     private let offersPath = "https://droppyn.herokuapp.com/offer/all"
     var offersPublisher: AnyPublisher<[OfferDTO],Error> {
         let url = URL(string: offersPath)!
@@ -60,5 +66,18 @@ class APIController {
             .receive(on: RunLoop.main)
             .eraseToAnyPublisher()
     }
+    
+    private let userPath = "https://droppyn.herokuapp.com/user?id=609ed22c98cb1221fdbecea7"
+    var userPublisher: AnyPublisher<UserDTO,Error> {
+        let url = URL(string: userPath)!
+        return URLSession.shared.dataTaskPublisher(for: url)
+            .map{$0.data}
+            .decode(type: UserDTO.self, decoder: JSONDecoder())
+            .receive(on: RunLoop.main)
+            .eraseToAnyPublisher()
+    }
+    
+    
+    
     
 }

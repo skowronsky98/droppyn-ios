@@ -23,11 +23,11 @@ struct ContentView: View {
                  Text("Shop")
               }
             
-            ChatView()
-                .tabItem {
-                Image(systemName: "bubble.left.fill")
-                Text("Chat")
-            }
+//            ChatView()
+//                .tabItem {
+//                Image(systemName: "bubble.left.fill")
+//                Text("Chat")
+//            }
             
             FavoriteListView()
                 .tabItem {

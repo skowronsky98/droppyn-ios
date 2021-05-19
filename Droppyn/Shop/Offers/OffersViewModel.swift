@@ -14,6 +14,7 @@ class OffersViewModel: ObservableObject {
     
     private var offerSubscriber: AnyCancellable?
     
+    
     func fetchOffers() {
         offerSubscriber = APIController().offersPublisher
             .sink(receiveCompletion: {_ in }, receiveValue: { (offersDTO) in
