@@ -20,6 +20,7 @@ struct MyOffersListView: View {
                     
                 
                 }.onDelete(perform: { indexSet in
+                    
                     for i in indexSet {
                         myOffersVM.deleteItem(index: i)
                     }

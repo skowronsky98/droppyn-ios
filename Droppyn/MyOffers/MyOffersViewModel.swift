@@ -109,6 +109,33 @@ class MyOffersViewModel: ObservableObject {
         }.resume()
     }
     
+    func deleteMyOffer(offer: Offer) {
+        
+//        let body: [String: Any] = ["_id": offer.id, "price": offer.price, "bio": offer.bio]
+        
+        let path = "https://droppyn.herokuapp.com/offer/myoffer?id=\(offer.id)&userId=\(offer.user.id)"
+        guard let url = URL(string: path) else { fatalError()}
+        
+        
+//        let data = try! JSONSerialization.data(withJSONObject: body)
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "DELETE"
+//        request.httpBody = data
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        
+        URLSession.shared.dataTask(with: request) {(data, res, err ) in
+            if let err = err {
+                print(err)
+            } else {
+                
+                return
+            }
+            self.fetchMyOffers()
+        }.resume()
+    }
+    
     init() {
         //load const data
 //        myOffers = PreviewData.MyOffers
@@ -118,6 +145,9 @@ class MyOffersViewModel: ObservableObject {
     }
 
     func deleteItem(index: Int) {
+        let tmpOffer = myOffers[index]
+        deleteMyOffer(offer: tmpOffer)
+        
         myOffers.remove(at: index)
     }
     
