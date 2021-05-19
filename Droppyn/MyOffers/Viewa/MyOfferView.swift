@@ -12,6 +12,7 @@ struct MyOfferView: View {
     @Binding var myOffer : Offer
     
     @ObservedObject var sizeChartVM : SizeChartViewModel
+    @ObservedObject var myOffersVM: MyOffersViewModel
     @State private var sizeIndex = 0
 //    @State private var price = 0.0
     
@@ -72,6 +73,7 @@ struct MyOfferView: View {
                         Button("Save"){
             //                print(sizeIndex)
                             myOffer.size = sizeChartVM.sizeChartModel[sizeIndex]
+                            myOffersVM.updateMyOffer(offer: myOffer)
                             self.presentationMode.wrappedValue.dismiss()
 
                         }
@@ -100,6 +102,6 @@ struct MyOfferView: View {
 
 struct MyOfferView_Previews: PreviewProvider {
     static var previews: some View {
-        MyOfferView(myOffer: .constant(PreviewData.MyOffers[0]), sizeChartVM: SizeChartViewModel())
+        MyOfferView(myOffer: .constant(PreviewData.MyOffers[0]), sizeChartVM: SizeChartViewModel(), myOffersVM: MyOffersViewModel())
     }
 }

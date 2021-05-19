@@ -11,7 +11,7 @@ struct MyOffersListView: View {
                     ZStack {
                         MyOfferItemView(offer: offer)
                         
-                        NavigationLink(destination: MyOfferView(myOffer: self.$myOffersVM.myOffers[self.myOffersVM.myOffers.firstIndex(matching: offer)!], sizeChartVM: sizeChartVM)){
+                        NavigationLink(destination: MyOfferView(myOffer: self.$myOffersVM.myOffers[self.myOffersVM.myOffers.firstIndex(matching: offer)!], sizeChartVM: sizeChartVM, myOffersVM: myOffersVM)){
                             EmptyView()
                             
                         }
@@ -24,6 +24,7 @@ struct MyOffersListView: View {
                         myOffersVM.deleteItem(index: i)
                     }
                 })
+
             }.listStyle(PlainListStyle())
             .navigationBarTitle("My Offers")
             .navigationBarItems(trailing: NavigationLink(destination: CreateOffer(myOffersViewModel: myOffersVM, sizeChartVM: sizeChartVM)) {
