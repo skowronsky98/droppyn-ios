@@ -18,7 +18,7 @@ class OffersViewModel: ObservableObject {
     func fetchOffers() {
         offerSubscriber = APIController().offersPublisher
             .sink(receiveCompletion: {_ in }, receiveValue: { (offersDTO) in
-                self.offers = OfferMapper.toDomain(offersDTO: offersDTO)
+                self.offers = OfferMapper.toDomain(offersDTO: offersDTO).filter{ $0.shoe.id == self.shoe.id }
             })
     }
     
