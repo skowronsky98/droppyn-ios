@@ -11,7 +11,7 @@ struct OfferDetailView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     
-    @StateObject private var favoriteVM = FavoriteViewModel()
+    @EnvironmentObject private var favoriteVM : FavoriteViewModel
     
     @State private var favorite = false
     
@@ -76,7 +76,7 @@ struct OfferDetailView: View {
                         }, label: {
                             HStack {
                                 Image(systemName: "plus.bubble.fill")
-                                Text("Message")
+                                Text("View Profile")
                             }
                         })
                         Spacer()
@@ -90,8 +90,10 @@ struct OfferDetailView: View {
             
            // Spacer()
             
-        }.navigationBarTitle("\(offer.user.firstname)", displayMode: .inline)
+        }.navigationBarTitle("\(offer.user.username)", displayMode: .inline)
         .navigationBarItems(trailing: Button(action: {
+            
+            print("fav list change")
            
             if !favorite {
                 favoriteVM.addOfferToFavorite(offer: offer)
@@ -101,6 +103,8 @@ struct OfferDetailView: View {
                 favoriteVM.deleteOffer(offer: offer)
                 favorite = false
             }
+            
+          
             
         }) {
             
@@ -128,6 +132,6 @@ struct OfferDetailView: View {
 
 struct OfferDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        OfferDetailView(offer: PreviewData.Offers[0])
+        OfferDetailView(offer: PreviewData.Offers[0]).environmentObject(FavoriteViewModel())
     }
 }

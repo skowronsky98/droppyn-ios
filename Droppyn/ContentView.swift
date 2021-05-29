@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var favoriteVM = FavoriteViewModel()
+    
+    
     var body: some View {
         
         TabView {
@@ -17,7 +20,7 @@ struct ContentView: View {
                    Text("Home")
                  }
             
-            ShoeListView()
+            ShoeListView().environmentObject(favoriteVM)
               .tabItem {
                  Image(systemName: "bag.fill")
                  Text("Shop")
@@ -29,7 +32,7 @@ struct ContentView: View {
 //                Text("Chat")
 //            }
             
-            FavoriteListView()
+            FavoriteListView().environmentObject(favoriteVM)
                 .tabItem {
                    Image(systemName: "heart.fill")
                    Text("Favorite")

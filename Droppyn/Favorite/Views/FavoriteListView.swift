@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavoriteListView: View {
     
-    @StateObject private var favoriteVM = FavoriteViewModel()
+    @EnvironmentObject private var favoriteVM: FavoriteViewModel
     var body: some View {
         
         NavigationView{
@@ -40,6 +40,6 @@ struct FavoriteListView: View {
 
 struct FavoriteView_Previews: PreviewProvider {
     static var previews: some View {
-        FavoriteListView()
+        FavoriteListView().environmentObject(FavoriteViewModel())
     }
 }

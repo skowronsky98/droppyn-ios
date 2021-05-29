@@ -16,8 +16,6 @@ struct MyOffersListView: View {
                             
                         }
                     }
-                    
-                    
                 
                 }.onDelete(perform: { indexSet in
                     
@@ -31,9 +29,7 @@ struct MyOffersListView: View {
             .navigationBarItems(trailing: NavigationLink(destination: CreateOffer(myOffersViewModel: myOffersVM, sizeChartVM: sizeChartVM)) {
                     Image(systemName: "plus.app").font(.title)
                 }
-
             )
-            
         }
     }
 }

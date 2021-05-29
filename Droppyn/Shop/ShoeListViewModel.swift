@@ -11,7 +11,7 @@ import Combine
 class ShoeListViewModel: ObservableObject {
     
     @Published var shoes : [Shoe] = []
-    var brand: Brand?
+    //var brand: Brand?
     
     private var shoeSubscriber: AnyCancellable?
     

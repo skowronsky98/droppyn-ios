@@ -42,3 +42,4 @@ struct OffersListView_Previews: PreviewProvider {
         OffersListView(shoe: PreviewData.Shoes[0])
     }
 }
+
