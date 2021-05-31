@@ -2,7 +2,7 @@ import SwiftUI
 
 struct MyOffersListView: View {
     @StateObject private var myOffersVM = MyOffersViewModel()
-    @StateObject private var sizeChartVM = SizeChartViewModel()
+    @EnvironmentObject private var sizeChartVM: SizeChartViewModel
     var body: some View{
         NavigationView{
             List{
@@ -26,7 +26,7 @@ struct MyOffersListView: View {
 
             }.listStyle(PlainListStyle())
             .navigationBarTitle("My Offers")
-            .navigationBarItems(trailing: NavigationLink(destination: CreateOffer(myOffersViewModel: myOffersVM, sizeChartVM: sizeChartVM)) {
+            .navigationBarItems(trailing: NavigationLink(destination: CreateOffer(myOffersViewModel: myOffersVM)) {
                     Image(systemName: "plus.app").font(.title)
                 }
             )

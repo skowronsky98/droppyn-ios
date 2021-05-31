@@ -14,7 +14,7 @@ struct OfferDetailView: View {
     @EnvironmentObject private var favoriteVM : FavoriteViewModel
     
     @State private var favorite = false
-    
+    @State private var profile = false
     var offer: Offer
     
     var body: some View {
@@ -39,11 +39,7 @@ struct OfferDetailView: View {
             Text("\(offer.shoe.brand.name)")
                     .font(.headline)
                     .foregroundColor(.black)
-            
 
-            
-             
-       
             
             Form{
                 
@@ -72,7 +68,7 @@ struct OfferDetailView: View {
                         Button(action: {
 //                            self.presentationMode.wrappedValue.dismiss()
                             
-                            
+                            profile = true
                         }, label: {
                             HStack {
                                 Image(systemName: "plus.bubble.fill")
@@ -90,7 +86,11 @@ struct OfferDetailView: View {
             
            // Spacer()
             
-        }.navigationBarTitle("\(offer.user.username)", displayMode: .inline)
+        }
+        .sheet(isPresented: $profile, content: {
+            OfferProfileView(profile: offer.user, isPresented: $profile)
+        })
+        .navigationBarTitle("\(offer.user.username)", displayMode: .inline)
         .navigationBarItems(trailing: Button(action: {
             
             print("fav list change")

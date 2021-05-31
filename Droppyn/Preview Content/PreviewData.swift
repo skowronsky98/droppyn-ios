@@ -28,7 +28,7 @@ class PreviewData {
     ]
     
     static let Shoes = [
-        Shoe(model: "Air Max 97", brand: Brands[0], media: shoeMedia),
+        Shoe(model: "Air Max 97Air Jordan 1AirAir Jordan 1", brand: Brands[0], media: shoeMedia),
         Shoe(model: "Air Force 1", brand: Brands[0], media: shoeMedia),
         Shoe(model: "Air Jordan 1", brand: Brands[0], media: shoeMedia),
         Shoe(model: "Yeezy Boost 350", brand: Brands[1], media: shoeMedia),

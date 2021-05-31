@@ -82,7 +82,7 @@ class MyOffersViewModel: ObservableObject {
     
     func updateMyOffer(offer: Offer) {
         
-        let body: [String: Any] = ["_id": offer.id, "price": offer.price, "bio": offer.bio]
+        let body: [String: Any] = ["_id": offer.id, "price": offer.price, "active": offer.active, "bio": offer.bio]
         
         let path = "https://droppyn.herokuapp.com/offer/myoffer?shoeId=\(offer.shoe.id)&userId=\(offer.user.id)&sizeId=\(offer.size.id)"
         guard let url = URL(string: path) else { fatalError()}

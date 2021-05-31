@@ -64,11 +64,14 @@ struct MyOfferItemView: View {
                     
                     Spacer()
                 }
-            }.fixedSize(horizontal: false, vertical: true)
+            }
+//            }.fixedSize(horizontal: false, vertical: true)
             //.padding(.horizontal,8)
         }
+        
         .fixedSize(horizontal: false, vertical: true)
         .padding(.vertical,4)
+        
     }
 }
 struct MyOfferItemView_Previews: PreviewProvider {

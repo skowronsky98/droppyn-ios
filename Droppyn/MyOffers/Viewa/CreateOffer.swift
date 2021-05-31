@@ -7,7 +7,7 @@ struct CreateOffer: View {
     
     @StateObject private var createOfferVM = CreateOfferViewModel()
     
-    @ObservedObject var sizeChartVM : SizeChartViewModel
+    @EnvironmentObject private var sizeChartVM : SizeChartViewModel
        
     @State private var isShoesPresented = false
     
@@ -157,6 +157,6 @@ struct SelectShoes: View {
 
 struct CreateOffer_Previews: PreviewProvider {
     static var previews: some View {
-        CreateOffer(myOffersViewModel: MyOffersViewModel(), sizeChartVM: SizeChartViewModel())
+        CreateOffer(myOffersViewModel: MyOffersViewModel()).environmentObject(SizeChartViewModel())
     }
 }

@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var favoriteVM = FavoriteViewModel()
-    
+    @StateObject private var sizeChart = SizeChartViewModel()
     
     var body: some View {
         
         TabView {
-            MyOffersListView()
+            MyOffersListView().environmentObject(sizeChart)
                 .tabItem {
                    Image(systemName: "house.fill")
                    Text("Home")
                  }
             
-            ShoeListView().environmentObject(favoriteVM)
+            ShoeListView().environmentObject(favoriteVM).environmentObject(sizeChart)
               .tabItem {
                  Image(systemName: "bag.fill")
                  Text("Shop")
