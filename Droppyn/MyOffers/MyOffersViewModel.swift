@@ -18,11 +18,6 @@ class MyOffersViewModel: ObservableObject {
 //        }
 //    }
     
-    private var myOfferSubscriber: AnyCancellable?
-    
-    
-    
-    
     func postMyOffer(offer: Offer){
         
 //        let offerDTO = OfferMapper.toDTO(offer: offer)

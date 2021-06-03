@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//import Firebase
+import Firebase
 
 
 
@@ -14,6 +14,10 @@ import SwiftUI
 struct DroppynApp: App {
     
 //    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    init() {
+        FirebaseApp.configure()
+    }
     
     var body: some Scene {
         WindowGroup {

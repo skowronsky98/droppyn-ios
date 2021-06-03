@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ProfileView: View {
-    @ObservedObject private var profileVM = ProfileViewModel()
+    @EnvironmentObject private var profileVM: ProfileViewModel
     
     @State var rValue: Double = 0.5
        @State var gValue: Double = 0.5

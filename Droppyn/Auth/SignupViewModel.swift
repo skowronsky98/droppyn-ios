@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Firebase
+
 class SignupViewModel: ObservableObject {
     @Published public var email: String = ""
     @Published public var username: String = ""
@@ -13,5 +15,15 @@ class SignupViewModel: ObservableObject {
     @Published public var password: String = ""
     @Published public var repeatPassword: String = ""
     
+    func register(completion: @escaping () -> Void) {
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                completion()
+            }
+            
+        }
+    }
     
 }

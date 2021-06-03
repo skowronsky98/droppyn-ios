@@ -6,53 +6,58 @@
 //
 
 import SwiftUI
+import Firebase
+
 
 struct SignupView: View {
+    
+    @EnvironmentObject private var profileVM: ProfileViewModel
     
     @StateObject private var signupVM = SignupViewModel()
     var body: some View {
         NavigationView {
-            Form {
-                
-                Section {
-                    TextField("email", text: $signupVM.email)
-                        
-                    TextField("username", text: $signupVM.username)
-                        
-                    TextField("phone", text: $signupVM.phone)
-                        
-                    SecureField("password", text: $signupVM.password)
-                        
-                    SecureField("repeat password", text: $signupVM.password)
-                        
-                }
-                
-                Section{
-                    HStack {
-                        
-                        Spacer()
-                        Button("Signup") {
+            VStack {
+                Form {
+                    
+                    Section {
+                        TextField("email", text: $signupVM.email)
                             
+                        TextField("username", text: $signupVM.username)
                             
+                        TextField("phone", text: $signupVM.phone)
+                            
+                        SecureField("password", text: $signupVM.password)
+                            
+                        SecureField("repeat password", text: $signupVM.repeatPassword)
+                            
+                    }
+                    
+                    Section{
+                        HStack {
+                            
+                            Spacer()
+                            Button("Signup") {
+                                
+                                signupVM.register {
+                                    profileVM.setIdUser()
+                                }
+                            }
+                            Spacer()
                         }
-                        Spacer()
                     }
                 }
                 
+                Spacer()
+                HStack {
+                    Spacer()
+                    NavigationLink(destination: LoginView()){
+                        Text("Already have an account?").padding()
+                    }
+                    
+                    
+                }
                 
-                
-//                Section {
-//                    HStack{
-//                        Spacer()
-//                        Button("Signup") {
-//
-//
-//                        }.foregroundColor(.pink)
-//                        Spacer()
-//                    }
-//                }
-                
-            }.navigationTitle("Signup")
+            }.navigationTitle("Sign up")
         }
     }
 }

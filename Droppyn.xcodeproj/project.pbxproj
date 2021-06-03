@@ -201,6 +201,7 @@
 		B72F489026667DA900D4D1F4 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				B72F489126667DC400D4D1F4 /* AuthView.swift */,
 				B72F48A426667F6C00D4D1F4 /* Views */,
 				B72F489926667DD400D4D1F4 /* AuthViewModel.swift */,
 				B755DC24266681C9003EA680 /* LoginViewModel.swift */,
@@ -411,7 +412,6 @@
 				B7330FA82642F50F0014EA1C /* Utills */,
 				B7F2E81A2642F34E00A43811 /* DroppynApp.swift */,
 				B7F2E81C2642F34E00A43811 /* ContentView.swift */,
-				B72F489126667DC400D4D1F4 /* AuthView.swift */,
 				B7F2E81E2642F34F00A43811 /* Assets.xcassets */,
 				B7F2E8232642F34F00A43811 /* Info.plist */,
 				B71067372646B5F000CB65EF /* GoogleService-Info.plist */,

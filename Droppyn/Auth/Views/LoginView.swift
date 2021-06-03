@@ -6,37 +6,58 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @StateObject private var loginVM = LoginViewModel()
+    @EnvironmentObject private var profileVM: ProfileViewModel
     
     var body: some View {
-        NavigationView {
-            Form {
-                
-                Section {
-                    TextField("email", text: $loginVM.email)
-                        
-                    SecureField("password", text: $loginVM.password)
-                        
-                }
-                
-                Section{
-                    HStack {
-                        
-                        Spacer()
-                        Button("Login") {
+        
+            VStack {
+                Form {
+                    
+                    Section {
+                        TextField("email", text: $loginVM.email)
                             
+                        SecureField("password", text: $loginVM.password)
                             
-                        }
-                        Spacer()
                     }
+                    
+                    Section{
+                        HStack {
+                            
+                            Spacer()
+                            Button("Login") {
+                                loginVM.login {
+                                    profileVM.setIdUser()
+                                }
+                                
+                            }
+                            Spacer()
+                        }
+                    }
+                    
+                    
                 }
                 
-                
-            }.navigationTitle("Login    ")
-        }
+                Spacer()
+                HStack {
+                    Spacer()
+                        
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        Text("Create account").padding()
+                    })
+                        
+                    
+                    
+                    
+                }
+            }.navigationTitle("Login")
+        
     }
 }
 

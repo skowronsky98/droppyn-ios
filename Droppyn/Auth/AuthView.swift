@@ -9,10 +9,10 @@ import SwiftUI
 
 struct AuthView: View {
     
-    @StateObject var authViewModel = AuthViewModel()
+    @StateObject private var profileVM = ProfileViewModel()
     
     var body: some View {
-        authViewModel.logedin ? AnyView(ContentView()) : AnyView(SignupView())
+        profileVM.id.count > 0 ? AnyView(ContentView().environmentObject(profileVM)) : AnyView(SignupView().environmentObject(profileVM))
     }
 }
 
