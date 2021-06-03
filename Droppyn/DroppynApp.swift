@@ -17,7 +17,7 @@ struct DroppynApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthView()
         }
     }
 }
