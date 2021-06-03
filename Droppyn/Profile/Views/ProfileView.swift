@@ -1,4 +1,5 @@
 import SwiftUI
+import Firebase
 
 struct ProfileView: View {
     @EnvironmentObject private var profileVM: ProfileViewModel
@@ -28,6 +29,22 @@ struct ProfileView: View {
                            }
                        }
                    }
+                    Section (header: Text("Log out")) {
+                        HStack{
+                            Spacer()
+                            Button("Log out") {
+                                let firebaseAuth = Auth.auth()
+                              do {
+                                try firebaseAuth.signOut()
+                                exit(1)
+                                
+                              } catch let signOutError as NSError {
+                                print ("Error signing out: %@", signOutError)
+                              }
+                            }
+                            Spacer()
+                        }
+                    }
                }
 
                .navigationBarTitle(Text("Settings"))

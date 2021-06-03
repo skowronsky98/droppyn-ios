@@ -3,6 +3,7 @@ import SwiftUI
 struct MyOffersListView: View {
     @StateObject private var myOffersVM = MyOffersViewModel()
     @EnvironmentObject private var sizeChartVM: SizeChartViewModel
+    
     var body: some View{
         NavigationView{
             List{

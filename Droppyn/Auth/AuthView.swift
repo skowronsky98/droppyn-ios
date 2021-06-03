@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct AuthView: View {
     
     @StateObject private var profileVM = ProfileViewModel()
     
     var body: some View {
-        profileVM.id.count > 0 ? AnyView(ContentView().environmentObject(profileVM)) : AnyView(SignupView().environmentObject(profileVM))
+        Auth.auth().currentUser != nil ? AnyView(ContentView().environmentObject(profileVM)) : AnyView(SignupView().environmentObject(profileVM))
     }
 }
 

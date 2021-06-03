@@ -13,7 +13,7 @@ class SizeChartViewModel: ObservableObject {
         sizeChartSubscriber = APIController().sizeChartPublisher
             .sink(receiveCompletion: {_ in }, receiveValue: { (sizeChartDTO) in
                 self.sizeChartModel = SizeChartMapper.toDomain(sizeChartsDTO: sizeChartDTO)
-                print(self.sizeChartModel)
+//                print(self.sizeChartModel)
             })
     }
     

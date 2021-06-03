@@ -9,11 +9,16 @@ import Foundation
 import Firebase
 
 class SignupViewModel: ObservableObject {
+    
     @Published public var email: String = ""
     @Published public var username: String = ""
+    @Published public var firstname: String = ""
+    @Published public var surname: String = ""
     @Published public var phone: String = ""
     @Published public var password: String = ""
     @Published public var repeatPassword: String = ""
+    
+
     
     func register(completion: @escaping () -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
@@ -21,6 +26,7 @@ class SignupViewModel: ObservableObject {
                 print(error.localizedDescription)
             } else {
                 completion()
+                
             }
             
         }

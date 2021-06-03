@@ -12,6 +12,7 @@ class PreviewData {
     static let shoeMedia = Media(imageUrl: "shoe", smallImageUrl: "", thumbUrl: "")
     
     
+    
     static var MyUser = User(id: "609ed22c98cb1221fdbecea7",username: "gierczak", email: "norbert.gierczak@gmail.com", firstname: "Adam", surname: "Małysz", phone: "909876345", photoURL: "profile", defultSize: SizeCharts[0])
     
     static var Users = [

@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import Firebase
 
 class MyOffersViewModel: ObservableObject {
     @Published var myOffers: [Offer] = []
@@ -19,12 +20,14 @@ class MyOffersViewModel: ObservableObject {
 //    }
     
     func postMyOffer(offer: Offer){
-        
+        guard let userID = Auth.auth().currentUser?.uid else {
+            return
+        }
 //        let offerDTO = OfferMapper.toDTO(offer: offer)
         
         let body: [String: Any] = ["price": offer.price, "bio": offer.bio]
         
-        let path = "https://droppyn.herokuapp.com/offer/myoffer?shoeId=\(offer.shoe.id)&userId=\(offer.user.id)&sizeId=\(offer.size.id)"
+        let path = "https://droppyn.herokuapp.com/offer/myoffer?shoeId=\(offer.shoe.id)&userId=\(userID)&sizeId=\(offer.size.id)"
         guard let url = URL(string: path) else {
             print("Invalid POST myOffer URL")
             return
@@ -54,7 +57,12 @@ class MyOffersViewModel: ObservableObject {
     }
     
     func fetchMyOffers() {
-        let path = "https://droppyn.herokuapp.com/offer/myoffer/all?userId=\(user.id)"
+        
+        guard let userID = Auth.auth().currentUser?.uid else {
+            return
+        }
+        
+        let path = "https://droppyn.herokuapp.com/offer/myoffer/all?userId=\(userID)"
         guard let url = URL(string: path) else {
             print("Invalid GET myOffer URL")
             return
@@ -140,7 +148,8 @@ class MyOffersViewModel: ObservableObject {
         fetchMyOffers()
     
     }
-
+    
+    
     func deleteItem(index: Int) {
         let tmpOffer = myOffers[index]
         deleteMyOffer(offer: tmpOffer)

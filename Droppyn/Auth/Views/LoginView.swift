@@ -19,7 +19,7 @@ struct LoginView: View {
                 Form {
                     
                     Section {
-                        TextField("email", text: $loginVM.email)
+                        TextField("email", text: $loginVM.email).autocapitalization(.none)
                             
                         SecureField("password", text: $loginVM.password)
                             
@@ -31,7 +31,7 @@ struct LoginView: View {
                             Spacer()
                             Button("Login") {
                                 loginVM.login {
-                                    profileVM.setIdUser()
+                                    profileVM.setLoginUserID()
                                 }
                                 
                             }

@@ -15,60 +15,80 @@ class ProfileViewModel: ObservableObject {
     init() {
         user = PreviewData.MyUser
         
-        setIdUser()
+        setLoginUserID()
         
-        
-//        fetchUserData()
     }
     
-    func setIdUser(){
-        let currentUser = Auth.auth().currentUser
-        currentUser?.getIDTokenForcingRefresh(true) { idToken, error in
-          if let error = error {
-            print(error.localizedDescription)
-            return;
-          }
-            
-            //TODO post data to backend
-            self.id = idToken ?? ""
+    func setLoginUserID(){
+        if let user = Auth.auth().currentUser {
+            self.id = user.uid
+            fetchUserData(id: id)
+        }
+        
+    }
+    
+    
+
+    
+    func fetchUserData(id: String) {
+
+        if id.count > 0 {
+            let path = "https://droppyn.herokuapp.com/user?id=\(id)"
+            guard let url = URL(string: path) else {
+                print("Invalid GET user URL")
+                return
+            }
+            let request = URLRequest(url: url)
+
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                if let data = data {
+                    if let decodedResponse = try? JSONDecoder().decode(UserDTO.self, from: data) {
+                        DispatchQueue.main.async {
+                            self.user = UserMapper.toDomain(userDTO: decodedResponse)
+                            print("User Fetched form API")
+                            PreviewData.MyUser = self.user
+                        }
+                        return
+                    }
+                }
+            }.resume()
+
         }
     }
     
-//    private let userPath = "https://droppyn.herokuapp.com/user?id=609ed22c98cb1221fdbecea7"
-//    var userPublisher: AnyPublisher<UserDTO,Error> {
-//        let url = URL(string: userPath)!
-//        return URLSession.shared.dataTaskPublisher(for: url)
-//            .map{$0.data}
-//            .decode(type: UserDTO.self, decoder: JSONDecoder())
-//            .receive(on: RunLoop.main)
-//            .eraseToAnyPublisher()
-//    }
     
-//    func fetchUserData() {
-//
-//        if let id = id {
-//            let path = "https://droppyn.herokuapp.com/user?id=\(id)"
-//            guard let url = URL(string: path) else {
-//                print("Invalid GET user URL")
-//                return
-//            }
-//            let request = URLRequest(url: url)
-//
-//            URLSession.shared.dataTask(with: request) { data, response, error in
-//                if let data = data {
-//                    if let decodedResponse = try? JSONDecoder().decode(UserDTO.self, from: data) {
-//                        DispatchQueue.main.async {
-//                            self.user = UserMapper.toDomain(userDTO: decodedResponse)
-//                            print("User Fetched form API")
-//                        }
-//                        return
-//                    }
-//                }
-//            }.resume()
-//
-//        }
-//
-//
-//
-//    }
+    func postUser(email: String, username: String, firstname: String, surname: String, phone: String){
+        
+        let body: [String: Any] = ["id": self.id, "username": username, "firstname": firstname, "surname": surname, "email": email, "phone": phone, "photoURL": "profile"]
+        
+        let path = "https://droppyn.herokuapp.com/user"
+        guard let url = URL(string: path) else {
+            print("Invalid POST user URL")
+            return
+        }
+        
+        
+        let data = try! JSONSerialization.data(withJSONObject: body)
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.httpBody = data
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        
+        URLSession.shared.dataTask(with: request) {(data, res, err ) in
+            do {
+                if let data = data {
+                    _ = try JSONDecoder().decode(UserDTO.self, from: data)
+//                    print(result)
+                    self.fetchUserData(id: self.id)
+                }
+            } catch (let error) {
+                print(error)
+            }
+        }.resume()
+        
+    }
+    
+
 }

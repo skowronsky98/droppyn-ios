@@ -11,7 +11,6 @@
 		A036AE290F44BD09BDE68CD0 /* Pods_DroppynTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2280C7BD3B0D8B11D86791 /* Pods_DroppynTests.framework */; };
 		B71067382646B5F000CB65EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71067372646B5F000CB65EF /* GoogleService-Info.plist */; };
 		B72F489226667DC400D4D1F4 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F489126667DC400D4D1F4 /* AuthView.swift */; };
-		B72F489A26667DD400D4D1F4 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F489926667DD400D4D1F4 /* AuthViewModel.swift */; };
 		B72F48A626667F8700D4D1F4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F48A526667F8700D4D1F4 /* LoginView.swift */; };
 		B72F48B126667FA500D4D1F4 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72F48B026667FA500D4D1F4 /* SignupView.swift */; };
 		B7330F8B2642F4E10014EA1C /* ShoeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7330F692642F4E10014EA1C /* ShoeListViewModel.swift */; };
@@ -88,7 +87,6 @@
 		80F6763FDFE71317C833B702 /* Pods-DroppynTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DroppynTests.debug.xcconfig"; path = "Target Support Files/Pods-DroppynTests/Pods-DroppynTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B71067372646B5F000CB65EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B72F489126667DC400D4D1F4 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		B72F489926667DD400D4D1F4 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		B72F48A526667F8700D4D1F4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B72F48B026667FA500D4D1F4 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		B7330F692642F4E10014EA1C /* ShoeListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoeListViewModel.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 			children = (
 				B72F489126667DC400D4D1F4 /* AuthView.swift */,
 				B72F48A426667F6C00D4D1F4 /* Views */,
-				B72F489926667DD400D4D1F4 /* AuthViewModel.swift */,
 				B755DC24266681C9003EA680 /* LoginViewModel.swift */,
 				B755DC2C26668580003EA680 /* SignupViewModel.swift */,
 			);
@@ -691,7 +688,6 @@
 				B776A1D0264FFAF100BBB4AC /* UserDTO.swift in Sources */,
 				B72F48B126667FA500D4D1F4 /* SignupView.swift in Sources */,
 				B7330FA02642F4E10014EA1C /* MyOfferItemView.swift in Sources */,
-				B72F489A26667DD400D4D1F4 /* AuthViewModel.swift in Sources */,
 				B7330FA32642F4E10014EA1C /* ProfileViewModel.swift in Sources */,
 				B7F2E81D2642F34E00A43811 /* ContentView.swift in Sources */,
 				B776A1C6264FF84A00BBB4AC /* Media.swift in Sources */,

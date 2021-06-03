@@ -20,9 +20,13 @@ struct SignupView: View {
                 Form {
                     
                     Section {
-                        TextField("email", text: $signupVM.email)
+                        TextField("email", text: $signupVM.email).autocapitalization(.none)
                             
-                        TextField("username", text: $signupVM.username)
+                        TextField("username", text: $signupVM.username).autocapitalization(.none)
+                        
+                        TextField("firstname", text: $signupVM.firstname)
+                        
+                        TextField("surname", text: $signupVM.surname)
                             
                         TextField("phone", text: $signupVM.phone)
                             
@@ -39,11 +43,15 @@ struct SignupView: View {
                             Button("Signup") {
                                 
                                 signupVM.register {
-                                    profileVM.setIdUser()
+                                    if let user = Auth.auth().currentUser {
+                                        profileVM.id = user.uid
+                                        profileVM.postUser(email: signupVM.email, username: signupVM.username, firstname: signupVM.firstname, surname: signupVM.surname, phone: signupVM.phone)
+                                    }
                                 }
                             }
-                            Spacer()
+                                Spacer()
                         }
+                            
                     }
                 }
                 
@@ -56,11 +64,14 @@ struct SignupView: View {
                     
                     
                 }
+                }.navigationTitle("Sign up")
                 
-            }.navigationTitle("Sign up")
+               
+                
+            }
         }
     }
-}
+
 
 struct SignupView_Previews: PreviewProvider {
     static var previews: some View {
