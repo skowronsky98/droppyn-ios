@@ -6,6 +6,7 @@
 //
 import Foundation
 import Combine
+import Firebase
 
 class APIController {
     private let shoesPath = "https://droppyn.herokuapp.com/shoe/all"
@@ -31,7 +32,7 @@ class APIController {
     }
     
        
-    private let favoriteOffersPath = "https://droppyn.herokuapp.com//offer/favoriteoffer/all?userId=609ed22c98cb1221fdbecea7"
+    private let favoriteOffersPath = "https://droppyn.herokuapp.com/offer/favoriteoffer/all?userId=\(Auth.auth().currentUser?.uid ?? "2vpMCtfUoja4eTdBdB6dWpn6PzG3")"
     var favoriteOffersPublisher: AnyPublisher<[OfferDTO],Error> {
         let url = URL(string: favoriteOffersPath)!
         return URLSession.shared.dataTaskPublisher(for: url)

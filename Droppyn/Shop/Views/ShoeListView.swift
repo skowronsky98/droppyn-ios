@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftUIRefresh
 
 struct ShoeListView: View {
-    @ObservedObject private var shoeListVM = ShoeListViewModel()
+    @StateObject private var shoeListVM = ShoeListViewModel()
+    @State private var isShowing = false
     
     var body: some View {
         
@@ -19,7 +21,16 @@ struct ShoeListView: View {
                         ShoeItemView(shoe: shoe)
                     }
                 }
-            }.navigationBarTitle("Search Shoes")
+            }
+            .pullToRefresh(isShowing: $isShowing) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.isShowing = false
+                    shoeListVM.fetchShoes()
+                }
+            }
+           .navigationBarTitle("Search Shoes")
+            
+
         }
     }
 }

@@ -21,6 +21,7 @@ class ShoeListViewModel: ObservableObject {
         shoeSubscriber = APIController().shoesPublisher
             .sink(receiveCompletion: {_ in }, receiveValue: { (shoesDTO) in
                 self.shoes = ShoeMapper.toDomain(shoesDTO: shoesDTO)
+                print("Shoes fetched from API")
             })
     }
     

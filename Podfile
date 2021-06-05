@@ -7,9 +7,14 @@ target 'Droppyn' do
 
   # Pods for Droppyn
   pod 'SDWebImageSwiftUI'
+  pod "SwiftUIRefresh"
+  
+  
 #  pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
 #  pod 'Firebase/Firestore'
+
+
   
   target 'DroppynTests' do
     inherit! :search_paths

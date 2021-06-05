@@ -17,6 +17,7 @@ class FavoriteViewModel: ObservableObject {
         favoriteOfferSubscriber = APIController().favoriteOffersPublisher
             .sink(receiveCompletion: {_ in }, receiveValue: { (favoriteOffersDTO) in
                 self.favoriteOffers = OfferMapper.toDomain(offersDTO: favoriteOffersDTO)
+                print("Favorite fetched form API")
             })
     }
     

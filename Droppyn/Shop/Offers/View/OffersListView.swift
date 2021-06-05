@@ -9,6 +9,8 @@ struct OffersListView: View {
     @State private var showFilter = false
     
     @State private var sizeIndex = -1
+    @State private var isShowing = false
+    
     
     @EnvironmentObject private var sizeChartVM: SizeChartViewModel
     
@@ -56,7 +58,14 @@ struct OffersListView: View {
                     }
                 }
 
-            }.listStyle(PlainListStyle())
+            }
+            .pullToRefresh(isShowing: $isShowing) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    self.isShowing = false
+                    offersVM.fetchOffers()
+                }
+            }
+            .listStyle(PlainListStyle())
             .navigationBarTitle(offersVM.shoe.model)
             .navigationBarItems(trailing: Button(action: {
                     showFilter = true
